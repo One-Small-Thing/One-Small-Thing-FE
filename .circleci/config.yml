@@ -13,7 +13,7 @@ jobs:
     steps:
       - checkout
       - node/install
-        node-version: "16.14"
+        # node-version: "16.14"
       - node/install-packages: #If you are using Yarn change this to Yarn
           pkg-manager: npm
       # - run:
