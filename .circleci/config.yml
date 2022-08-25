@@ -7,14 +7,18 @@ orbs:
 
 jobs:
   build_and_test:
-    executor: node/default
+    docker: 
+      - image: "cimg/base-stable"
+    # executor: node/default
     steps:
       - checkout
+      - node/install
+        node-version: "16.14"
       - node/install-packages: #If you are using Yarn change this to Yarn
           pkg-manager: npm
-      # - run:
-      #     name: Run tests
-      #     command: npm test # If you are using Yarn, change this to Yarn - Hence if you are testing your project with Cypress you need to add a new run for that depends on how you've defined that script in your project.
+      - run:
+          name: Run tests
+          command: npm test # If you are using Yarn, change this to Yarn - Hence if you are testing your project with Cypress you need to add a new run for that depends on how you've defined that script in your project.
       - cypress/run:
           start: npm start
           wait-on: 'http://localhost:3000' 
@@ -25,3 +29,7 @@ jobs:
       #     root: ~/project
       #     paths:
       #       - .
+workflows:
+  build_and_test:
+    jobs:
+      - build_and_test
