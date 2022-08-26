@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.e69f3066.js",
-    "static/js/787.9a08ab5c.chunk.js": "/static/js/787.9a08ab5c.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.e69f3066.js.map": "/static/js/main.e69f3066.js.map",
-    "787.9a08ab5c.chunk.js.map": "/static/js/787.9a08ab5c.chunk.js.map"
+    "main.css": "/One-Small-Thing-FE/static/css/main.073c9b0a.css",
+    "main.js": "/One-Small-Thing-FE/static/js/main.70f139ef.js",
+    "static/js/787.9a08ab5c.chunk.js": "/One-Small-Thing-FE/static/js/787.9a08ab5c.chunk.js",
+    "static/media/logo.svg": "/One-Small-Thing-FE/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/One-Small-Thing-FE/index.html",
+    "main.073c9b0a.css.map": "/One-Small-Thing-FE/static/css/main.073c9b0a.css.map",
+    "main.70f139ef.js.map": "/One-Small-Thing-FE/static/js/main.70f139ef.js.map",
+    "787.9a08ab5c.chunk.js.map": "/One-Small-Thing-FE/static/js/787.9a08ab5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e69f3066.js"
+    "static/js/main.70f139ef.js"
   ]
 }
