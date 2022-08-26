@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+![GitHub Actions Workflow](https://github.com/One-Small-Thing/One-Small-Thing-FE/actions/workflows/pr.js.yml/badge.svg)
 
-Neil and Alex were here, again!
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
