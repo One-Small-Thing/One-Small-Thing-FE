@@ -1,5 +1,6 @@
 {
   "name": "one-small-thing-fe",
+  "homepage": "https://one-small-thing.github.io/One-Small-Thing-FE/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
