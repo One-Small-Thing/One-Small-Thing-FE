@@ -1,4 +1,30 @@
 .hot-topics {
   height: 85vh;
   background-color: #F6F9FC;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hot-topics__desc {
+  padding: 2rem;
+  text-align: center;
+}
+.hot-topics__buttons {
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 10rem 10rem 10rem;
+  grid-template-columns: 10rem 10rem 10rem;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+.hot-topics__buttons a {
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBE792;
 }/*# sourceMappingURL=HotTopics.css.map */
