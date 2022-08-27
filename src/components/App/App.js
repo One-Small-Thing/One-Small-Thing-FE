@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <NavBar />
       <HotTopics />
-      <NewsStories />
+      {/* <NewsStories />
       <Article />
-      <CongressAction />
+      <CongressAction /> */}
       <Footer />
     </div>
   );
