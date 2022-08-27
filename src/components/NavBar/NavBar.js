@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <p>NavBar</p>
+        <p>One Small Thing</p>
     )
 }
 export default NavBar;
