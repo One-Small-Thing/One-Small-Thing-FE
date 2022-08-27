@@ -1,9 +1,9 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import HotTopics from '../HotTopics/HotTopics';
-import NewsStories from '../NewsStories/NewsStories';
-import Article from '../Article/Article';
-import CongressAction from '../CongressAction/CongressAction';
+// import NewsStories from '../NewsStories/NewsStories';
+// import Article from '../Article/Article';
+// import CongressAction from '../CongressAction/CongressAction';
 import Footer from '../Footer/Footer';
 import './App.css';
 
