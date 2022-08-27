@@ -1,4 +1,10 @@
 .navbar {
   height: 10vh;
   background-color: #82C7CC;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+.navbar__img {
+  height: 5rem;
 }/*# sourceMappingURL=NavBar.css.map */
