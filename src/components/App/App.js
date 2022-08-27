@@ -1,9 +1,10 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import HotTopics from '../HotTopics/HotTopics';
+import NewsStories from '../NewsStories/NewsStories';
+import Article from '../Article/Article';
 import Footer from '../Footer/Footer';
 import './App.css';
-import NewsStories from '../NewsStories/NewsStories';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <HotTopics />
       <NewsStories />
+      <Article />
       <Footer />
     </div>
   );
