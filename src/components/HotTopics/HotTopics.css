@@ -18,7 +18,7 @@
   grid-gap: 1rem;
   justify-content: center;
 }
-.hot-topics__buttons a {
+.hot-topics__buttons .topics {
   height: auto;
   width: auto;
   padding: 0.5rem;
