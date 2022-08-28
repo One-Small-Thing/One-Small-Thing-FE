@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -16,11 +17,11 @@ const NavBar = () => {
                     <div className='navbar__main--menu--background'>&nbsp;</div>
                     <nav className='navbar__main--menu--nav'>
                         <ul className='navbar__main--menu--list'>
-                            <li className='navbar__main--menu--item'><a href='#' className='navbar__main--menu--link'>About</a></li>
-                            <li className='navbar__main--menu--item'><a href='#' className='navbar__main--menu--link'>Main</a></li>
-                            <li className='navbar__main--menu--item'><a href='#' className='navbar__main--menu--link'>About 3</a></li>
-                            <li className='navbar__main--menu--item'><a href='#' className='navbar__main--menu--link'>About 4</a></li>
-                            <li className='navbar__main--menu--item'><a href='#' className='navbar__main--menu--link'>About 5</a></li>
+                            <li className='navbar__main--menu--item'><div className='navbar__main--menu--link'>About</div></li>
+                            <li className='navbar__main--menu--item'><div className='navbar__main--menu--link'>Main</div></li>
+                            <li className='navbar__main--menu--item'><div className='navbar__main--menu--link'>About 3</div></li>
+                            <li className='navbar__main--menu--item'><div className='navbar__main--menu--link'>About 4</div></li>
+                            <li className='navbar__main--menu--item'><div className='navbar__main--menu--link'>About 5</div></li>
                         </ul>
                     </nav>
                 </div>
