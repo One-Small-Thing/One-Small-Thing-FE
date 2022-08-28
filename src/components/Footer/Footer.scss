@@ -1,6 +1,7 @@
+@import '../../variables/variables.scss';
 .footer {
     height: 5vh;
-    background-color: #82C7CC;
+    background-color: $color-turquoise-light;
     text-align: center;
     padding: 1rem;
 }

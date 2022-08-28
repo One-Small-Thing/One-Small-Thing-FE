@@ -1,11 +1,29 @@
+@import '../../variables/variables.scss';
 .navbar {
     height: 10vh;
-    background-color: #82C7CC;
+    background-color: transparent;
+    padding: 1rem 2rem 1rem 1rem;
     display: flex;
-    justify-content: space-between;
-    padding: .75rem;
-
-    &__img {
+  
+    &--img {
         height: 5rem;
     }
+
+    &__main{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+        border-bottom: 1px solid rgb(64, 61, 61);
+
+        &--display {
+            padding-left: 3rem;
+
+            &:not(:last-child){
+                padding: 0 3rem 0 3rem;
+                border-right: 1px solid rgb(64, 61, 61);
+            }
+        }
+    }
+
 }
