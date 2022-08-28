@@ -1,0 +1,55 @@
+{
+    "news": [ 
+        {
+            "id": 1,
+            "tags": ["LGBTQ+", "adoption"],
+            "date": "02/22/22",
+            "title": "LGBTQ Adoption Rights infringed!",
+                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores pariatur consequatur et vel, ullam voluptates deserunt sint nostrum culpa repudiandae, omnis odit ex rem perspiciatis quos libero amet. Ipsum, tenetur!",
+                "author": "Danny Martin",
+                "location": "Denver, CO",
+                "img": "https://raisingchildren.net.au/__data/assets/image/0026/48455/raising-an-adopted-child.jpg"
+          }, 
+          {
+            "id": 2,
+            "tags": ["Envirnoment"],
+            "date": "02/22/22",
+            "title": "Oil Spill!",
+                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit!",
+                "author": "David Atanborough",
+                "location": "New York, NY",
+                "img": "https://www.greenpeace.org/static/planet4-international-stateless/2020/09/5a4f7d68-gp1su9nb-1024x576.jpg"
+          }, 
+          {
+            "id": 3,
+            "tags": ["Gun Rights"],
+            "date": "02/22/22",
+            "title": "Poaching!",
+                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores pariatur consequatur et vel, ullam voluptates deserunt sint nostrum culpa repudiandae, omnis odit ex rem perspiciatis quos libero amet.",
+                "author": "Anderson Cooper!",
+                "location": "Los Angeles, CA",
+                "img": "https://cdn.britannica.com/45/190745-050-1F7EC780/Gun-Constitution.jpg*"
+          }, 
+          {
+            "id": 4,
+            "tags": ["Education"],
+            "date": "02/22/22",
+            "title": "Senate tries to block Debt forgiveness?!",
+                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores pariatur consequatur et vel, ullam voluptates deserunt sint nostrum culpa repudiandae, omnis odit ex rem perspiciatis quos libero amet. Ipsum, tenetur!",
+                "author": "Ron Burgundy",
+                "location": "Miami, FL",
+                "img": "https://m.economictimes.com/thumb/msid-64232973,width-1200,height-900,resizemode-4,imgsize-50192/untitled-8.jpg"
+          },
+          {
+            "id": 5,
+            "tags": ["Education"],
+            "date": "02/22/22",
+            "title": "How much are you paying for college?",
+                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores pariatur consequatur et vel, ullam voluptates deserunt sint nostrum culpa repudiandae, omnis odit ex rem perspiciatis quos libero amet. Ipsum, tenetur!",
+                "author": "Larry King",
+                "location": "Seattle, WA",
+                "img": null
+          }
+          
+    ]
+}
