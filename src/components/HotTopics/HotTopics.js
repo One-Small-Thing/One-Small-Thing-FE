@@ -1,8 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import Topics from './Topics.js';
 import './HotTopics.css';
 
 const HotTopics = () => {
+
+    const Array = [ "Environment", "LGBTQIA+", "Reproductive Rights", "Education", "Domestic Violence", "Free & Open Computing", "Gun Control", "All Topics", "Surprise Me!"]
+
+    const listItems = Array.map(element => {
+        return (
+        <Topics 
+        id={Array.indexOf(element)} 
+        key={element} 
+        topic={element} 
+        />
+        )
+    })
+
+
+
     return (
         <section className='hot-topics'>
             <div className='hot-topics__desc'>
@@ -10,15 +25,7 @@ const HotTopics = () => {
                 <p>When the world is at it's bleakest, sometimes it just needs brave souls who are willing to help.. Even if it's just one small thing.</p>
             </div>
             <div className='hot-topics__buttons'>
-                <Link to="/newsStories/environment" className='topics'>Environment</Link>
-                <Link to="/newsStories/reproductive-rights" className='topics'>Reproductive Rights</Link>
-                <Link to="/newsStories/education" className='topics'>Education</Link>
-                <Link to="/newsStories/lgbtqia" className='topics'>LGBTQIA+</Link>
-                <Link to="/newsStories/domestic-violence" className='topics'>Domestic Violence</Link>
-                <Link to="/newsStories/free-and-open-computing" className='topics'>Free & Open Computing</Link>
-                <Link to="/newsStories/gun-conrol" className='topics'>Gun Control</Link>
-                <Link to="/newsStories/all-topics" className='topics'>All Topics</Link>
-                <Link to="/newsStories/surprise-me" className='topics'>Surprise Me!</Link>
+              {listItems}
             </div>
 
         </section>

@@ -1,22 +1,36 @@
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import HotTopics from '../HotTopics/HotTopics';
+import NewsStories from '../NewsStories/NewsStories';
+import { Route } from 'react-router-dom';
 // import NewsStories from '../NewsStories/NewsStories';
 // import Article from '../Article/Article';
 // import CongressAction from '../CongressAction/CongressAction';
 import Footer from '../Footer/Footer';
 import './App.css';
 
-function App() {
+const client = new ApolloClient({
+  uri: `${process.env.REACT_APP_BASE_URL}/graphql?test=1`,
+  cache: new InMemoryCache()
+});
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <NavBar />
-      <HotTopics />
-      {/* <NewsStories />
-      <Article />
-      <CongressAction /> */}
-      <Footer />
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <NavBar />
+        <Route exact path="/" render={() => <HotTopics />} />
+        <Route path='/NewsStories/:topic' render={( { match } ) => { return (<NewsStories topic={match.params.topic}/>)} }/>
+
+        {/* <NewsStories />
+        <Article />
+        <CongressAction /> */}
+        <Footer />
+      </div>
+    </ApolloProvider>
   );
 }
 
