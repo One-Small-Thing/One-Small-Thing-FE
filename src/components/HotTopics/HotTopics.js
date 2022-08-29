@@ -1,37 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Topics from './Topics.js';
+import { Link } from 'react-router-dom';
 import './HotTopics.css';
 
 const HotTopics = () => {
 
-   const [ data, setData ] = useState([ 
-        {
-            "id": 1,
-            "tags": ["LGBTQIA+", "Reproductive Rights"],
-            "date": "02/22/22",
-            "title": "LGBTQ Adoption Rights infringed!",
-                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores pariatur consequatur et vel, ullam voluptates deserunt sint nostrum culpa repudiandae, omnis odit ex rem perspiciatis quos libero amet. Ipsum, tenetur!",
-                "author": "Danny Martin",
-                "location": "Denver, CO",
-                "img": "https://raisingchildren.net.au/__data/assets/image/0026/48455/raising-an-adopted-child.jpg"
-          }, 
-          {
-            "id": 2,
-            "tags": ["Environment"],
-            "date": "02/22/22",
-            "title": "Oil Spill!",
-                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit!",
-                "author": "David Atanborough",
-                "location": "New York, NY",
-                "img": "https://www.greenpeace.org/static/planet4-international-stateless/2020/09/5a4f7d68-gp1su9nb-1024x576.jpg"
-          }
-    ])
+    const Array = [ "Environment", "LGBTQIA+", "Reproductive Rights", "Education", "Domestic Violence", "Free & Open Computing", "Gun Control", "All Topics", "Surprise Me!"]
 
-    const Array = [ "Environemnt", "LGBTQIA+", "Reproductive Rights", "Education", "Domestic Violence", "Free & Open Computing", ""]
+    const listItems = Array.map(element => {
+        return (
+        <Topics 
+        id={Array.indexOf(element)} 
+        key={element} 
+        topic={element} 
+        />
+        )
+    })
 
-    const [ categoryNews, setCategoryNews ] = useState([])
-    const [ currentTag, setCurrentTag ] = useState('')
-
+    // OTHER FIX
     // const findCurrentTag = (event) => { 
     //    setCurrentTag(event.target.href)
     // const hrefTag = currentTag.split('/')[4]
@@ -49,11 +35,6 @@ const HotTopics = () => {
 
     //  console.log('foundNews', foundNews)
     // }
-
-    const findCurrentTag = (event) => {
-        setCurrentTag(event.target.value)
-        console.log('state works?!', currentTag)
-    }
 
 
     //Psuedo Code for JSON CONTRACT
@@ -99,17 +80,7 @@ const HotTopics = () => {
                 <p>When the world is at it's bleakest, sometimes it just needs brave souls who are willing to help.. Even if it's just one small thing.</p>
             </div>
             <div className='hot-topics__buttons'>
-                <Link to={`/newsStories/${currentTag}`}>
-                    <button value="Environment" onClick={event => findCurrentTag(event)} className='topics'>Environment</button>
-                    <button value="Reproductive Rights" onClick={event => findCurrentTag(event)} className='topics'>Reproductive Rights</button>
-                    <button value="Education" onClick={event => findCurrentTag(event)} className='topics'>Education</button>
-                    <button value="LGBTQIA+" onClick={event => findCurrentTag(event)} className='topics'>LGBTQIA+</button>
-                    <button value="Domestic Violence" onClick={event => findCurrentTag(event)} className='topics'>Domestic Violence</button>
-                    <button value="Free & Open Computing" onClick={event => findCurrentTag(event)} className='topics'>Free & Open Computing</button>
-                    <button value="Gun Control" onClick={event => findCurrentTag(event)} className='topics'>Gun Control</button>
-                    <button value="All Topics" onClick={event => findCurrentTag(event)} className='topics'>All Topics</button>
-                    <button value="Surprise Me!" onClick={event => findCurrentTag(event)} className='topics'>Surprise Me!</button>
-                </Link>
+              {listItems}
             </div>
 
         </section>
