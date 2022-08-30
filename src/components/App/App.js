@@ -11,12 +11,11 @@ import Footer from '../Footer/Footer';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: `${process.env.REACT_APP_BASE_URL}/graphql?test=1`,
+  uri: `${process.env.REACT_APP_BASE_URL}`,
   cache: new InMemoryCache()
 });
 
 const App = () => {
-
 
   return (
     <ApolloProvider client={client}>

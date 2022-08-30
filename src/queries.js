@@ -1,16 +1,13 @@
 import {gql} from '@apollo/client';
 
 export const GET_NEWS_BY_TAG = gql `
-    query getNewsByTag($tags: String!) {
-        news {
-            id
-            tags 
+  query {
+        headlines {
             date
+            author
             title
             content
-            author
-            location
             img
         }
-    }
+}
 `
