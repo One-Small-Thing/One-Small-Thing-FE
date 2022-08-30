@@ -1,1 +1,30 @@
 /*# sourceMappingURL=NewsStories.css.map */
+
+.story-section{
+    border: 2px solid black
+}
+
+.top-left-corner-box {
+    border: 1px solid black;
+    background-color: yellow;
+    display:flex;
+    flex: start;
+}
+
+.bottom-left-corner-box {
+    border: 1px solid black;
+    background-color: yellow;
+    display: flex;
+    flex: end;
+}
+
+.news-story-title{
+}
+
+.author-name{
+
+}
+
+.tags{
+    
+}

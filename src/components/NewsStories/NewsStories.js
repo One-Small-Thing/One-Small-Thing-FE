@@ -9,13 +9,21 @@ const NewsStories = ({topic}) => {
       // const [ categoryNews, setCategoryNews ] = useState([])
       // const [ currentTag, setCurrentTag ] = useState('')
 
-    debugger
+
     if(loading) return "Loading..."
     if(error) return `Error! ${error.message}`
     console.log(data)
     
     return (
-        <p>News</p>
+      <section className="story-section" >
+        <div className="top-left-corner-box">
+          <p className="tags">TAG HERE</p>
+        </div>
+        <h2 className="news-story-title">News Article Title</h2>
+        <div className="bottom-left-corner-box">
+          <p className="author-name">Author Name</p>
+        </div>
+      </section>
     )
 }
 
