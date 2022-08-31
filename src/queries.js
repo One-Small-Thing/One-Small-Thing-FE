@@ -1,5 +1,4 @@
 import {gql} from '@apollo/client';
-import { storeValueIsStoreObject } from '@apollo/client/cache/inmemory/helpers';
 
 export const GET_NEWS_BY_HEADLINE = gql`
 query {
