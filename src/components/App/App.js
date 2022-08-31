@@ -1,4 +1,3 @@
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import HotTopics from '../HotTopics/HotTopics';
@@ -10,27 +9,20 @@ import { Route } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import './App.css';
 
-const client = new ApolloClient({
-  uri: `${process.env.REACT_APP_BASE_URL}/graphql?test=1`,
-  cache: new InMemoryCache()
-});
 
 const App = () => {
 
-
   return (
-    <ApolloProvider client={client}>
       <div className="App">
         <NavBar />
         <Route exact path="/" render={() => <HotTopics />} />
         <Route path='/NewsStories/:topic' render={( { match } ) => { return (<NewsStories topic={match.params.topic}/>)} }/>
-
         {/* <NewsStories />
         <Article />
         <CongressAction /> */}
         <Footer />
       </div>
-    </ApolloProvider>
+
   );
 }
 

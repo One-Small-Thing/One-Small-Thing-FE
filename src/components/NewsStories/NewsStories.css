@@ -1,1 +1,25 @@
 /*# sourceMappingURL=NewsStories.css.map */
+
+.story-section{
+    border: 2px solid black
+}
+
+.tag-box, .action-box{
+    border: 1px solid black;
+    background-color: yellow;
+    display:flex;
+    flex: start;
+    justify-content: space-between;
+}
+
+.news-story-title{
+    border: 1px sold black;
+}
+
+.author-name{
+    border: 1px sold black;
+}
+
+.tags{
+    border: 1px sold black;
+}

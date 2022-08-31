@@ -6,10 +6,12 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
 .hot-topics__desc {
   padding: 2rem;
   text-align: center;
 }
+
 .hot-topics__buttons {
   padding: 2rem;
   display: grid;
@@ -18,13 +20,14 @@
   grid-gap: 1rem;
   justify-content: center;
 }
+
 .hot-topics__buttons .topics {
   height: auto;
   width: auto;
-  padding: 0.5rem;
+  padding: .5rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #EBE792;
-}/*# sourceMappingURL=HotTopics.css.map */
+}

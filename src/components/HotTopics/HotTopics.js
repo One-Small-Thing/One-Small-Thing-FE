@@ -1,5 +1,5 @@
 import React from 'react';
-import Topics from './Topics.js';
+import Topics from "../Topics/Topics"
 import './HotTopics.css';
 
 const HotTopics = () => {
@@ -15,8 +15,6 @@ const HotTopics = () => {
         />
         )
     })
-
-
 
     return (
         <section className='hot-topics'>

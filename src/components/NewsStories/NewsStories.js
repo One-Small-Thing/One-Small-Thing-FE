@@ -1,22 +1,48 @@
 import React from "react";
 import { useQuery } from '@apollo/client';
-import { GET_NEWS_BY_TAG } from '../../queries';
+import { GET_NEWS_BY_HEADLINE } from '../../queries';
+import "./NewsStories.css"
 
-const NewsStories = ({topic}) => {
+const NewsStories = () => {
+  const { loading, error, data } = useQuery(GET_NEWS_BY_HEADLINE)
+  console.log(data)
 
-    const { loading, error, data } = useQuery(GET_NEWS_BY_TAG, {tags: topic})
+  if(loading) return "Loading..."
+  if(error) return `Error! ${error.message}`
+  
+  if(!loading){
+    const news = data.headlines.map(story => {
+    console.log("STORY", story)
     
-      // const [ categoryNews, setCategoryNews ] = useState([])
-      // const [ currentTag, setCurrentTag ] = useState('')
-
-    debugger
-    if(loading) return "Loading..."
-    if(error) return `Error! ${error.message}`
-    console.log(data)
     
     return (
-        <p>News</p>
+      <section key={story.title} className="story-section" 
+       style={{ backgroundImage:`url(${story.img})` }}
+      >
+          <div className="tag-box">
+            <p className="tags">{story.tags}</p>
+          </div>
+          <div className="action-box">
+            <p className="action">TAKE ACTION</p>
+          </div>
+          <div className="title-box">
+          <h2 className="news-story-title">{story.title}</h2>
+            <p className="author-name">by {story.author}</p>
+          </div>
+        </section>
     )
+    })
+      
+      return (
+        <div>
+          {news}
+        </div>
+      )
+  }
+          
 }
-
+        
 export default NewsStories;
+        
+   
+        
