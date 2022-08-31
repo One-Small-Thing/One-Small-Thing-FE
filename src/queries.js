@@ -1,13 +1,27 @@
 import {gql} from '@apollo/client';
+import { storeValueIsStoreObject } from '@apollo/client/cache/inmemory/helpers';
 
-export const GET_NEWS_BY_TAG = gql `
-  query {
+export const GET_NEWS_BY_HEADLINE = gql`
+query {
         headlines {
             date
-            author
             title
-            content
             img
+            url
+            description
         }
-}
+    }
+`
+
+export const GET_NEWS_BY_TAG = gql`
+query {
+    stories(name: "Gun Violence")
+        headlines {
+            date
+            title
+            img
+            url
+            description
+        }
+    }
 `
