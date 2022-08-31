@@ -1,5 +1,5 @@
 import React from 'react';
-import Topics from "./Topics"
+import Topics from "../Topics/Topics"
 import './HotTopics.css';
 
 const HotTopics = () => {

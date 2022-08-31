@@ -14,7 +14,7 @@ const NewsStories = () => {
     
     return (
       <section key={story.title} className="story-section" 
-      // style={{ backgroundImage:`url(${story.img})` }}
+       style={{ backgroundImage:`url(${story.img})` }}
       >
           <div className="tag-box">
             <p className="tags">{story.tags}</p>
