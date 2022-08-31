@@ -16,8 +16,6 @@ const HotTopics = () => {
         )
     })
 
-
-
     return (
         <section className='hot-topics'>
             <div className='hot-topics__desc'>

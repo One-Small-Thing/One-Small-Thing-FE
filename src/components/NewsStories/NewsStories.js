@@ -6,6 +6,9 @@ import "./NewsStories.css"
 const NewsStories = () => {
   const { loading, error, data } = useQuery(GET_NEWS_BY_HEADLINE)
   console.log(data)
+
+  if(loading) return "Loading..."
+  if(error) return `Error! ${error.message}`
   
   if(!loading){
     const news = data.headlines.map(story => {
@@ -41,13 +44,5 @@ const NewsStories = () => {
         
 export default NewsStories;
         
-        // const [ categoryNews, setCategoryNews ] = useState([])
-        // const [ currentTag, setCurrentTag ] = useState('')
-        
-        
-        // if(loading) return "Loading..."
-        // if(error) return `Error! ${error.message}`
-        // console.log("HELLO", data)
-        
-        //     return <div>"Loading..."</div>
+   
         
