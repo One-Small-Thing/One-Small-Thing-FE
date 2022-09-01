@@ -21,12 +21,12 @@ const NewsStories = () => {
         style={{ backgroundImage:`url(${story.img})` }}>
             <div className="story__section__tag-box">
               <p className="tags">EDUCATION {story.tags}</p>
-              <p className="action">TAKE ACTION</p>
+              <p className="action">TAKE ACTION E</p>
             </div>
             <div className="story__section__title-box">
-            <h2 className="title">{story.title}</h2>
-              <p className="author-name">by {story.author}</p>
-              <p>{story.description}</p>
+              <h2 className="title">{story.title}</h2>
+              <p className="author-name">by Author Mc Authorson {story.author}</p>
+              <p className="date">{story.date}</p>
             </div>
           </section>
       </div>
