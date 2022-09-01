@@ -16,20 +16,21 @@ const NewsStories = () => {
     
     
     return (
-      <section key={story.title} className="story" 
-       style={{ backgroundImage:`url(${story.img})` }}
-      >
-          <div className="story__tag-box">
-            <p className="tags">{story.tags}</p>
-          </div>
-          <div className="story__action-box">
-            <p className="action">TAKE ACTION</p>
-          </div>
-          <div className="story__title-box">
-          <h2 className="title">{story.title}</h2>
-            <p className="author-name">by {story.author}</p>
-          </div>
-        </section>
+      <div className="story">
+        <section key={story.title} className="story__section" 
+        style={{ backgroundImage:`url(${story.img})` }}
+        >
+            <div className="story__tag-box">
+              <p className="tags">EDUCATION {story.tags}</p>
+              <p className="action">TAKE ACTION</p>
+            </div>
+            <div className="story__title-box">
+            <h2 className="title">{story.title}</h2>
+              <p className="author-name">by {story.author}</p>
+              <p>{story.description}</p>
+            </div>
+          </section>
+      </div>
     )
     })
       
