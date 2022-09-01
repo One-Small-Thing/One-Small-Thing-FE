@@ -18,13 +18,12 @@ const NewsStories = () => {
     return (
       <div className="story">
         <section key={story.title} className="story__section" 
-        style={{ backgroundImage:`url(${story.img})` }}
-        >
-            <div className="story__tag-box">
+        style={{ backgroundImage:`url(${story.img})` }}>
+            <div className="story__section__tag-box">
               <p className="tags">EDUCATION {story.tags}</p>
               <p className="action">TAKE ACTION</p>
             </div>
-            <div className="story__title-box">
+            <div className="story__section__title-box">
             <h2 className="title">{story.title}</h2>
               <p className="author-name">by {story.author}</p>
               <p>{story.description}</p>
