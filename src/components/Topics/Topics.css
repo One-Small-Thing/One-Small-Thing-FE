@@ -1,0 +1,21 @@
+.topics {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #142028;
+}
+.topics .topics__box {
+  height: 10rem;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 231, 146, 0.8);
+  border-radius: 3px;
+  font-size: 1.2rem;
+  box-shadow: 0 1.5rem 4rem rgba(20, 32, 40, 0.2);
+}
+.topics .topics__box:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  background-color: #EBE792;
+}/*# sourceMappingURL=Topics.css.map */

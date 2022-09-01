@@ -1,0 +1,26 @@
+@import '../../variables/variables.scss';
+.topics {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-black;
+  
+    .topics__box {
+        height: 10rem;
+        padding: .5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color-yellow, .8);
+        border-radius: 3px;
+        font-size: 1.2rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+        &:hover {
+            transform: translateY(-.5rem) scale(1.03);
+            background-color: $color-yellow;
+        }
+
+    }
+
+}
