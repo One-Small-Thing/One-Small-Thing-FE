@@ -19,18 +19,6 @@
         grid-template-columns: 10rem 10rem 10rem;
         grid-gap: 1rem;
         justify-content: center;
-
-        .topics {
-            height: auto;
-            width: auto;
-            padding: .5rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $color-yellow;
-
-        }
     }
 
 }
