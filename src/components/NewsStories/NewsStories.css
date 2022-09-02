@@ -9,11 +9,11 @@
 }
 
 .story__section {
+  background-size: cover;
+  background-repeat: none;
   border: 2px solid black;
   height: 40vh;
   width: 75vw;
-  background-size: cover;
-  background-repeat: none;
 }
 
 .story__section__tag-box {
@@ -50,8 +50,7 @@
   background: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
-  flex: start;
-  justify-content: space-between;
+  flex: end;
   margin-top: 7.5rem;
   padding: 1rem;
 }
