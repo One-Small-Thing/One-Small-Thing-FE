@@ -18,7 +18,7 @@ const NewsStories = () => {
     
     return (
       <div className="story">
-        {story.img === null ?
+        {!story.img ?
         <section key={story.title} className="story__section" style={{ backgroundImage:`url(${peace})` }}
                   alt="woman with making peace symbol with hand in air at a rally">
             <div className="story__section__tag-box">

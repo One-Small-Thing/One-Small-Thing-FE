@@ -12,6 +12,8 @@
   border: 2px solid black;
   height: 40vh;
   width: 75vw;
+  background-size: cover;
+  background-repeat: none;
 }
 
 .story__section__tag-box {
