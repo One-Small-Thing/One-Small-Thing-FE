@@ -5,6 +5,7 @@
   margin-bottom: 1rem;
   margin-top: 2rem;
   width: 100vw;
+  -webkit-overflow-scrolling: touch;
 }
 
 .story__section {
@@ -54,13 +55,13 @@
 }
 
 .story__section__title-box .date {
-  font-size: 1.5em;
   color: black;
+  font-size: 1.5em;
 }
 
 .story__section__title-box .title {
-  font-size: 2em;
   color: black;
+  font-size: 2em;
 }
 
 .story__section__title-box .author-name {

@@ -7,6 +7,7 @@
     margin-bottom: 1rem;
     margin-top: 2rem;
     width: 100vw;
+    -webkit-overflow-scrolling: touch;
 
     &__section{
         border: 2px solid black;
@@ -42,7 +43,6 @@
             }
         }
         
-        
         &__title-box {
             background-color: whitesmoke;
             background: rgba(255, 255, 255, 0.5);
@@ -54,13 +54,13 @@
             padding:1rem;
             
             .date {
-                font-size: 1.5em;
                 color: black;
+                font-size: 1.5em;
             }
 
             .title {
-                font-size: 2em;
                 color: black;
+                font-size: 2em;
             }
             
             .author-name {
