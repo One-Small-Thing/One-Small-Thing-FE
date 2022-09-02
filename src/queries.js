@@ -15,7 +15,7 @@ query {
 export const GET_NEWS_BY_TAG = gql`
 query {
     stories(name: "Gun Violence")
-        headlines {
+         {
             date
             title
             img
