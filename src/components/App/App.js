@@ -17,6 +17,7 @@ const App = () => {
         <NavBar />
         <Route exact path="/" render={() => <HotTopics />} />
         <Route path='/NewsStories/:topic' render={( { match } ) => { return (<NewsStories topic={match.params.topic}/>)} }/>
+        <Route path='/Article' component={Article} />
         {/* <NewsStories />
         <Article />
         <CongressAction /> */}
