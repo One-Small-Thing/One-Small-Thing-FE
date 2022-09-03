@@ -61,7 +61,7 @@ const NewsStories = (event) => {
 
       <label htmlFor="mpo-modal-controller" className="mpo-modal-close">&times;</label>
 
-      <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" checked hidden/>
+      <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" defaultChecked hidden/>
       <input type="radio" name="content-nav" id="modal-content-2" className="modal-radio" hidden/>
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
 

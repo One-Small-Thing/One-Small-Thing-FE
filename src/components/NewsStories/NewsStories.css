@@ -75,7 +75,7 @@
 
 .story #mpo-modal-controller {
   position: absolute;
-  left: -9em;
+  left: -999em;
   opacity: 0;
 }
 
@@ -97,6 +97,12 @@
   top: 0;
   right: 0;
   z-index: 100;
+}
+
+.story *,
+.story *:before,
+.story *:after {
+  box-sizing: border-box;
 }
 
 .story .mpo-modal-wrap {
@@ -129,7 +135,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-15%, -15%);
+  transform: translate(-50%, -50%);
   max-width: 90%;
   max-height: 90%;
   padding: 15px 0;
