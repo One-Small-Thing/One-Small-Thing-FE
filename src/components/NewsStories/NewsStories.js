@@ -1,5 +1,5 @@
 import React from "react";
-import NewsStoryCard from './NewsStories/NewStoryCard';
+import NewsStoryCard from './NewStoryCard';
 import { useQuery } from '@apollo/client';
 import { GET_NEWS_BY_HEADLINE } from '../../queries';
 import "./NewsStories.css"
