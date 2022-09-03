@@ -39,6 +39,7 @@ const NewsStories = (event) => {
               <h2 className="title">{story.title}</h2>
               <p className="date">{story.date}</p>
             </div>
+            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
           </section>
           : 
           <section className="story__section" style={{ backgroundImage:`url(${story.img})` }}
@@ -52,7 +53,7 @@ const NewsStories = (event) => {
                 <p className="author-name">by {story.author}</p>
                 <p className="date">{story.date}</p>
               </div>
-              <Link className="Link__Article" to={{ pathname: "/Article", state: story.url }}><button>LINK</button></Link>
+              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
           </section>
         }
 <div className="mpo-modal">
