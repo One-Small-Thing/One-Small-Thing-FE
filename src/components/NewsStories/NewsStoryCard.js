@@ -4,9 +4,10 @@ import "./NewsStoryCard.css"
 
 const NewsStoryCard = ({id, date, title, img, description, author, url}) => {
 
+    const newBackground = img || peace
 
     return (
-        <section className="story__section" style={{backgroundImage:`url(${img})`}}
+        <section className="story__section" style={{backgroundImage:`url(${newBackground})`}}
         alt="still image scene from corresponding news article">
             <div className="story__section__tag-box">
                 <p className="tags">EDUCATION</p>
