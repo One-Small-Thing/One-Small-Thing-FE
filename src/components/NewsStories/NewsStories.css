@@ -73,6 +73,12 @@
   color: black;
 }
 
+.story *,
+.story *:before,
+.story *:after {
+  box-sizing: border-box;
+}
+
 .story #mpo-modal-controller {
   position: absolute;
   left: -999em;
@@ -94,15 +100,10 @@
   font-weight: bold;
   line-height: 20px;
   padding: 10px;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 100;
-}
-
-.story *,
-.story *:before,
-.story *:after {
-  box-sizing: border-box;
 }
 
 .story .mpo-modal-wrap {
@@ -141,6 +142,7 @@
   padding: 15px 0;
   background: #fff;
   border-radius: .25em;
+  overflow: hidden;
   text-align: center;
   width: 75%;
   z-index: 103;

@@ -72,6 +72,11 @@
     } 
     /*---------------------------------------*/
 
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
     /* modal open|close controller */
     #mpo-modal-controller {
         position: absolute;
@@ -94,18 +99,14 @@
         font-weight: bold;
         line-height: 20px;
         padding: 10px;
-        // position: absolute;
+        position: absolute;
 
         top: 0;
         right: 0;
         z-index: 100;
     }
     
-    *,
-    *:before,
-    *:after {
-        box-sizing: border-box;
-    }
+   
 
     /* modal */
     .mpo-modal-wrap {
@@ -145,7 +146,7 @@
         padding: 15px 0;
         background: #fff;
         border-radius: .25em;
-        // overflow: hidden;
+        overflow: hidden;
 
         text-align: center;
         width: 75%;
@@ -166,7 +167,6 @@
     .mpo-modal-slide {
         display: flex;
         // position: absolute;
-
         transition: all 0.4s ease-in;
         width: 100%
     }

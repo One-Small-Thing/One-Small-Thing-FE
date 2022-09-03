@@ -61,16 +61,15 @@ const NewsStories = (event) => {
 
       <label htmlFor="mpo-modal-controller" className="mpo-modal-close">&times;</label>
 
-      <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" defaultChecked hidden/>
+      <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" checked hidden/>
       <input type="radio" name="content-nav" id="modal-content-2" className="modal-radio" hidden/>
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
 
       <div className="mpo-modal-slide content-1">
         <div className="mpo-modal-content">
-          <h2>Example Modal - Slide 1</h2>
+          <h2>Write to your local <br/> Congress member</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolo esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <div className="mpo-modal-nav">
@@ -81,10 +80,9 @@ const NewsStories = (event) => {
 
       <div className="mpo-modal-slide content-2">
         <div className="mpo-modal-content">
-          <h2>Example Modal - Slide 2</h2>
+          <h2>Practice a 5 minute <br/> personal meditation <br/> to east your stress</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <div className="mpo-modal-nav">
@@ -96,10 +94,9 @@ const NewsStories = (event) => {
 
       <div className="mpo-modal-slide content-3">
         <div className="mpo-modal-content">
-          <h2>Example Modal - Slide 3</h2>
+          <h2>Find the closest <br/> pro-choice healthcare <br/> near you</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur int occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <div className="mpo-modal-nav">
