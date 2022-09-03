@@ -1,0 +1,99 @@
+@import '../../variables/variables.scss';
+
+.congress-container {
+    height: 83vh;
+}
+.congress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    -webkit-overflow-scrolling: touch;
+
+    &__section{
+        border: .5px solid $color-black;
+        height: 40vh;
+        width: 80vw;
+        background-color: $color-blue;
+        
+        &--tag-box{
+            display: flex;
+            justify-content: space-between;
+            
+            .tag {
+                border: .5px solid $color-black;
+                background-color: $color-periwinkle;
+                height: 5vh;
+                width: 30vw;
+                text-align: center;
+                padding-top: .75rem;
+                font-weight: bolder;
+                font-size: 1.5rem;
+            }
+            
+        }
+        
+        &--info-box {
+            background-color: $color-background;
+            background: rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            height: 65%;
+            margin-top: 2rem;
+            padding:1.5rem;
+            overflow-wrap: break-word;
+
+            .name{
+                color: $color-black;
+                font-size: 3rem;
+                padding-bottom: 1rem;
+            }
+            
+            .details{
+                font-size: 2em;
+                color: $color-black;
+                padding-bottom: .5rem;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }  
+}
+
+
+@media (min-width: 600px){
+    .congress-container {
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .congress {
+        &__section{
+            height: 40vh;
+            width: 40vh;
+            &--tag-box{
+                .tag {
+                    height: 5vh;
+                    width: 10vw;
+                    padding-top: 1rem;
+                }
+            }
+
+            &--info-box {
+                height: 70%;
+                margin-top: 4rem;
+                padding:1.5rem;
+    
+                .name{
+                    padding-bottom: 2rem;
+                }
+                
+            }
+        }
+    }
+}
