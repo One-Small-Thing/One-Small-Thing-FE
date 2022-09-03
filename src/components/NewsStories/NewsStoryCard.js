@@ -1,20 +1,20 @@
 import React from 'react';
 import "./NewsStories/NewsStoryCard.css"
 
-const NewsStoryCard = () => {
+const NewsStoryCard = ({id, date, title, img, description, url}) => {
 
 
     return (
-        <section key={story.title} className="story__section" style={{ backgroundImage:`url(${story.img})` }}
+        <section key={story.title} className="story__section" style={{ backgroundImage:`url(${img})` }}
         alt="still image scene from corresponding news article">
             <div className="story__section__tag-box">
-                <p className="tags">EDUCATION {story.tags}</p>
+                <p className="tags">EDUCATION</p>
                 <p className="action">TAKE ACTION</p>
             </div>
             <div className="story__section__title-box">
-                <h2 className="title">{story.title}</h2>
-                <p className="author-name">by Author Mc Authorson {story.author}</p>
-                <p className="date">{story.date}</p>
+                <h2 className="title">{title}</h2>
+                <p className="author-name">by Author Mc Authorson {author}</p>
+                <p className="date">{date}</p>
             </div>
         </section>
     )
