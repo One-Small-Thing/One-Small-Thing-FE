@@ -2,11 +2,11 @@ import React from 'react';
 import peace from "../../images/peace.jpg"
 import "./NewsStoryCard.css"
 
-const NewsStoryCard = ({id, date, title, img, description, url}) => {
+const NewsStoryCard = ({id, date, title, img, description, author, url}) => {
 
 
     return (
-        <section className="story__section" style={img ? { backgroundImage:`url(${img})`} : {backgroundImage: {peace}}}
+        <section className="story__section" style={{backgroundImage:`url(${img})`}}
         alt="still image scene from corresponding news article">
             <div className="story__section__tag-box">
                 <p className="tags">EDUCATION</p>

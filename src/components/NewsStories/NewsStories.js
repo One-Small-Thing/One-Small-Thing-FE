@@ -9,18 +9,18 @@ const NewsStories = () => {
 
   if(loading) return "Loading..."
   if(error) return `Error! ${error.message}`
-  if(data) {
-    const response = data.headlines;
-    const articleLinks = response.map(article => {
+  if(!loading) {
+    const articleLinks = response.map(story=> {
+
       return (
         <NewsStoryCard 
-          id={article.url} 
-          key={article.url} 
-          date={article.date} 
-          title={article.title} 
-          img={article.img} 
-          description={article.description} 
-          url={article.url} 
+          id={story.url} 
+          key={story.url} 
+          date={story.date} 
+          title={story.title} 
+          img={story.img} 
+          description={story.description} 
+          url={story.url} 
         /> 
       )
     })
