@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import HotTopics from '../HotTopics/HotTopics';
 import NewsStories from '../NewsStories/NewsStories';
+import NewsStoryCard from '../NewsStories/NewsStoryCard';
 import { Route } from 'react-router-dom';
 // import NewsStories from '../NewsStories/NewsStories';
 // import Article from '../Article/Article';
