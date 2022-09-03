@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery, gql } from '@apollo/client';
+import { Link } from 'react-router-dom';
 import "./NewsStories.css"
 import peace from "../../images/peace.jpg"
 
@@ -51,6 +52,7 @@ const NewsStories = (event) => {
                 <p className="author-name">by {story.author}</p>
                 <p className="date">{story.date}</p>
               </div>
+              <Link ><button>LINK</button></Link>
           </section>
         }
 <div className="mpo-modal">
