@@ -58,64 +58,50 @@ const NewsStories = (event) => {
   <div className="mpo-modal-wrap">
     <label htmlFor="mpo-modal-controller" className="mpo-modal-overlay"></label>
     <div className="mpo-modal-body">
-
       <label htmlFor="mpo-modal-controller" className="mpo-modal-close">&times;</label>
-
       <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" checked hidden/>
       <input type="radio" name="content-nav" id="modal-content-2" className="modal-radio" hidden/>
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
-
       <div className="mpo-modal-slide content-1">
         <div className="mpo-modal-content">
           <h2>Write to your local <br/> Congress member</h2>
           <p>
-            Lorem ipsum dolo esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolo esse cillum pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-
           <div className="mpo-modal-nav">
             <label htmlFor="modal-content-2" className="next-slide">&#8250;&#8250;</label>
           </div>
         </div>
       </div>
-
       <div className="mpo-modal-slide content-2">
         <div className="mpo-modal-content">
           <h2>Practice a 5 minute <br/> personal meditation <br/> to east your stress</h2>
           <p>
-            Lorem esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem esse cillum cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-
           <div className="mpo-modal-nav">
             <label htmlFor="modal-content-1" className="prev-slide">&#8249;&#8249;</label>
             <label htmlFor="modal-content-3" className="next-slide">&#8250;&#8250;</label>
           </div>
         </div>
       </div>
-
       <div className="mpo-modal-slide content-3">
         <div className="mpo-modal-content">
           <h2>Find the closest <br/> pro-choice healthcare <br/> near you</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur int occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-
-          <div className="mpo-modal-nav">
-            <label htmlFor="modal-content-2" className="prev-slide">&#8249;&#8249;</label>
+            <div className="mpo-modal-nav">
+              <label htmlFor="modal-content-2" className="prev-slide">&#8249;&#8249;</label>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
 </div>
-
-
-
-      </div>
     )
     })
-      
       return (
         <div>
           {news}
