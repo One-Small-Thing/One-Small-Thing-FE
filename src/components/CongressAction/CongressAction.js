@@ -1,7 +1,6 @@
 import React from "react";
 // import { useQuery, gql } from '@apollo/client';
 import "./CongressAction.css";
-import peace from '../../images/peace.jpg';
 
 const CongressAction = () => {
 
@@ -42,8 +41,6 @@ const CongressAction = () => {
     // }
     // `
     // const { loading, error, data } = useQuery(GET_CONGRESS_INFO)
-
-    console.log(data)
   
     // if(loading) return "Loading..."
     // if(error) return `Error! ${error.message}`
