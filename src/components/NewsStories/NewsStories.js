@@ -35,11 +35,13 @@ const NewsStories = (event) => {
               <p className="tags">{event.topic}</p>
               <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
             </div>
-            <div className="story__section__title-box">
-              <h2 className="title">{story.title}</h2>
-              <p className="date">{story.date}</p>
-            </div>
-            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
+            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+              <div className="story__section__title-box">
+                <h2 className="title">{story.title}</h2>
+                <p className="author-name">by {story.author}</p>
+                <p className="date">{story.date}</p>
+              </div>
+            </Link>
           </section>
           : 
           <section className="story__section" style={{ backgroundImage:`url(${story.img})` }}
@@ -48,12 +50,13 @@ const NewsStories = (event) => {
                 <p className="tags">{event.topic}</p>
                 <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
               </div>
-              <div className="story__section__title-box">
-                <h2 className="title">{story.title}</h2>
-                <p className="author-name">by {story.author}</p>
-                <p className="date">{story.date}</p>
-              </div>
-              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
+              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+                <div className="story__section__title-box">
+                  <h2 className="title">{story.title}</h2>
+                  <p className="author-name">by {story.author}</p>
+                  <p className="date">{story.date}</p>
+                </div>
+              </Link>
           </section>
         }
 <div className="mpo-modal">
@@ -67,7 +70,9 @@ const NewsStories = (event) => {
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
       <div className="mpo-modal-slide content-1">
         <div className="mpo-modal-content">
-          <h2>Write to your local <br/> Congress member</h2>
+          <Link to="/CongressAction">
+            <h2>Write to your local <br/> Congress member</h2>
+          </Link>
           <p>
             Lorem ipsum dolo esse cillum pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
