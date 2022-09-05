@@ -19,8 +19,7 @@ const HotTopics = () => {
     return (
         <section className='hot-topics'>
             <div className='hot-topics__desc'>
-                <h1>One Small Thing</h1>
-                <p>When the world is at it's bleakest, sometimes it just needs brave souls who are willing to help.. Even if it's just one small thing.</p>
+                <p>When the world seems it is at it's bleakest, and a sense of helplessness comes along, sometimes it just needs brave souls who are willing to help- to take one action that begins a series of change for good in the world... Even if it's just <strong>one small thing.</strong></p>
             </div>
             <div className='hot-topics__buttons'>
               {listItems}
