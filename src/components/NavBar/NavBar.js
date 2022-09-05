@@ -29,16 +29,17 @@ const NavBar = () => {
                                 </Link>
                             </li>
                             <li className='navbar__main--menu--item'>
-                                <div className='navbar__main--menu--hotline'>Crisis Hotlines<br/>
+                                <div className='navbar__main--menu--hotline'>Crisis Hotlines<br/><br/>
                                     <ul>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 2 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 3 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
-                                        <li>line 1 3535665161616516 hdjkrghdfg </li>
+                                        <p>We understand these topics can feel heavy. Please reach out to a professional if you ever need to talk.</p><br/><br/>
+                                        <li>LGBT National Youth Talkline 📞 1-800-246-7743</li>
+                                        <li>Teen Line 📞 1-800-852-8336</li>
+                                        <li>National Domestic Violence Hotline 📞 1-800-799-7233</li>
+                                        <li>Marine Corps DSTRESS Line 📞 1-877-476-7734</li>
+                                        <li>National Grad Crisis Line 📞 1-877-472-3457 </li>
+                                        <li>National Alliance on Mental Illness (NAMI) HelpLine 📞 1-800-950-6264</li>
+                                        <li>Disaster Distress Helpline (TTY) 📞 1-800-846-8517</li>
+                                        <li>988 Suicide & Crisis Lifeline 📞 988</li>
                                     </ul>
                                 </div>
                             </li>
