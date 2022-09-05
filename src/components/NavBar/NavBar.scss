@@ -4,26 +4,14 @@
     background-color: transparent;
     padding: 1rem 2rem 1rem 1rem;
     display: flex;
-  
-    &--img {
-        height: 5rem;
-    }
+    justify-content: center;
 
     &__main{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 70%;
         border-bottom: 1px solid $color-black;
-
-        &--display {
-            padding-left: 4rem;
-
-            &:not(:last-child){
-                padding: 0 3rem 0 3rem;
-                border-right: 1px solid $color-black;
-            }
-        }
 
         &--menu {
             &--checkbox {
