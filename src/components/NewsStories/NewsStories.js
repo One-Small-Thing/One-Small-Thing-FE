@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery, gql } from '@apollo/client';
+import { Link } from 'react-router-dom';
 import "./NewsStories.css"
 import peace from "../../images/peace.jpg"
 
@@ -38,6 +39,7 @@ const NewsStories = (event) => {
               <h2 className="title">{story.title}</h2>
               <p className="date">{story.date}</p>
             </div>
+            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
           </section>
           : 
           <section className="story__section" style={{ backgroundImage:`url(${story.img})` }}
@@ -51,6 +53,7 @@ const NewsStories = (event) => {
                 <p className="author-name">by {story.author}</p>
                 <p className="date">{story.date}</p>
               </div>
+              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
           </section>
         }
 <div className="mpo-modal">
