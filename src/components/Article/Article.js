@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import "./Article.css"
 
 
 
@@ -13,9 +14,11 @@ function Article() {
 
     
     return(
-        <div className="Link__Ember">
-            <iframe type="External__Url" title="News Article" src={embedUrl} height="800px" width="800px"></iframe>
-        </div>
+       
+            <div className="article">
+                <iframe className="article__main" type="External__Url" title="News Article" src={embedUrl} height="800px" width="800px"></iframe>
+            </div>
+     
     )
 }
 

@@ -1,0 +1,13 @@
+.article{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+   
+    &__main{
+        height: 85vh;
+        width: 80%;
+        background-color: white;
+    }
+}
