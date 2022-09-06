@@ -13,6 +13,11 @@
         width: 70%;
         border-bottom: 1px solid $color-black;
 
+        &--display{
+            text-decoration: none;
+            color: $color-black;
+        }
+
         &--menu {
             &--checkbox {
                 display: none;

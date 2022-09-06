@@ -1,81 +1,69 @@
 .congress-container {
-  height: 83vh;
+  height: 85vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.congress-container__title {
+  margin-top: 1rem;
+  font-size: 2.3rem;
 }
 
 .congress {
   display: flex;
+  height: 34vh;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
+  width: 100vw;
   -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 .congress__section {
-  border: 0.5px solid #142028;
-  height: 40vh;
-  width: 80vw;
-  background-color: #73AEDE;
-}
-.congress__section--tag-box {
-  display: flex;
-  justify-content: space-between;
-}
-.congress__section--tag-box .tag {
-  border: 0.5px solid #142028;
-  background-color: #9DBCD8;
-  height: 5vh;
-  width: 30vw;
-  text-align: center;
-  padding-top: 0.75rem;
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-.congress__section--info-box {
-  background-color: #F6F9FC;
-  background: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
-  height: 65%;
-  margin-top: 2rem;
-  padding: 1.5rem;
-  overflow-wrap: break-word;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: none;
+  border-radius: 1rem;
+  background-color: #F6F9FC;
+  height: 100%;
+  width: 60%;
+}
+.congress__section--info-box {
+  background: rgba(75, 141, 146, 0.5);
+  flex-direction: column;
+  height: 20%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 3rem;
 }
 .congress__section--info-box .name {
   color: #142028;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
-.congress__section--info-box .details {
-  font-size: 2em;
+.congress__section--info-box .details, .congress__section--info-box .party {
+  font-size: 1.5em;
   color: #142028;
-  padding-bottom: 0.5rem;
 }
-.congress__section--info-box .details a {
+.congress__section--info-box .details a, .congress__section--info-box .party a {
   text-decoration: none;
+  color: #4B8D92;
+  cursor: pointer;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 751px) {
   .congress-container {
     height: 85vh;
+    text-align: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  .congress__section {
-    height: 40vh;
-    width: 40vh;
-  }
-  .congress__section--tag-box .tag {
-    height: 5vh;
-    width: 10vw;
-    padding-top: 1rem;
-  }
-  .congress__section--info-box {
-    height: 70%;
-    margin-top: 4rem;
-    padding: 1.5rem;
-  }
-  .congress__section--info-box .name {
-    padding-bottom: 2rem;
+  .congress-container__members {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=CongressAction.css.map */

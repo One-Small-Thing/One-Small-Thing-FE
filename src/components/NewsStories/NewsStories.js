@@ -29,34 +29,36 @@ const NewsStories = (event) => {
     return (
       <div className="story" key={story.title}>
         {!story.img && !story.author ?
-        <section  className="story__section" style={{ backgroundImage:`url(${peace})` }}
-                  alt="woman with making peace symbol with hand in air at a rally">
-            <div className="story__section__tag-box">
-              <p className="tags">{event.topic}</p>
-              <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
-            </div>
+        <section  className="story__section">
+            <img className='story__section-img' src={peace} alt="woman with making peace symbol with hand in air at a rally"/>
             <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
               <div className="story__section__title-box">
+                <div className="story__section__title-box--by">
+                  <p className="date">{story.date}</p>
+                  <p className="author-name">by {story.author}</p>
+                </div>
                 <h2 className="title">{story.title}</h2>
-                <p className="author-name">by {story.author}</p>
-                <p className="date">{story.date}</p>
               </div>
             </Link>
+            <div className="story__section__tag-box">
+              <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
+            </div>
           </section>
           : 
-          <section className="story__section" style={{ backgroundImage:`url(${story.img})` }}
-                    alt="still image scene from corresponding news article">
-              <div className="story__section__tag-box">
-                <p className="tags">{event.topic}</p>
-                <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
-              </div>
-              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
-                <div className="story__section__title-box">
-                  <h2 className="title">{story.title}</h2>
-                  <p className="author-name">by {story.author}</p>
+          <section  className="story__section">
+            <img className='story__section-img' src={story.img} alt="still scene from corresponding news article"/>
+            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+              <div className="story__section__title-box">
+                <div className="story__section__title-box--by">
                   <p className="date">{story.date}</p>
+                  <p className="author-name">by {story.author}</p>
                 </div>
-              </Link>
+                <h2 className="title">{story.title}</h2>
+              </div>
+            </Link>
+            <div className="story__section__tag-box">
+              <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
+            </div>
           </section>
         }
 <div className="mpo-modal">
@@ -111,7 +113,8 @@ const NewsStories = (event) => {
     )
     })
       return (
-        <div>
+        <div className="story-container">
+          <h2 className="story-container__topic">{event.topic}</h2>
           { news }
         </div>
       )
