@@ -51,12 +51,9 @@ const CongressAction = () => {
         return (
             <div className="congress" key={person.fullName}>
                 <section className="congress__section">
-                    <div className="congress__section--tag-box">
-                        <p className="tag">{person.__typename}</p>
-                        <p className="tag">{party}</p>
-                    </div>
                     <div className="congress__section--info-box">
                         <h2 className="name">{person.fullName}</h2>
+                        <p className="party">{party}</p>
                         <p className="details">Phone: {person.phone}</p>
                         <p className="details">Twitter username: {person.twitter}</p>
                         <p className="details"><a href={person.url}>Website</a></p>
@@ -69,7 +66,8 @@ const CongressAction = () => {
         
         return (
           <div className="congress-container">
-            {representatives}
+            <h2 className="congress-container__title">Congress Members</h2>
+            <div className="congress-container__members">{representatives}</div>
           </div>
         )
     }      
