@@ -20,6 +20,7 @@ const NewsStories = (event) => {
   }
   `
   const { loading, error, data } = useQuery(GET_NEWS_BY_TAG, {name: event.topic})
+  console.log(data)
 
   if(loading) return "Loading..."
   if(error) return `Error! ${error.message}`
@@ -62,11 +63,11 @@ const NewsStories = (event) => {
           </section>
         }
 <div className="mpo-modal">
-  <input type="checkbox" id="mpo-modal-controller" className="mpo-modal-open" hidden/>
+  <input type="checkbox" id="mpo-modal-controller-1" className="mpo-modal-open" hidden/>
   <div className="mpo-modal-wrap">
-    <label htmlFor="mpo-modal-controller" className="mpo-modal-overlay"></label>
+    <label htmlFor="mpo-modal-controller-2" className="mpo-modal-overlay"></label>
     <div className="mpo-modal-body">
-      <label htmlFor="mpo-modal-controller" className="mpo-modal-close">&times;</label>
+      <label htmlFor="mpo-modal-controller-3" className="mpo-modal-close">&times;</label>
       <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" checked hidden/>
       <input type="radio" name="content-nav" id="modal-content-2" className="modal-radio" hidden/>
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>

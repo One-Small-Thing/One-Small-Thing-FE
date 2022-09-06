@@ -76,7 +76,7 @@
         box-sizing: border-box;
     }
     /* modal open|close controller */
-    #mpo-modal-controller {
+    #mpo-modal-controller, #mpo-modal-controller-1, #mpo-modal-controller-2, #mpo-modal-controller-3 {
         position: absolute;
         left: -999em;
         opacity: 0;
