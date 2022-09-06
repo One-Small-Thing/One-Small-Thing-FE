@@ -35,11 +35,13 @@ const NewsStories = (event) => {
               <p className="tags">{event.topic}</p>
               <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
             </div>
-            <div className="story__section__title-box">
-              <h2 className="title">{story.title}</h2>
-              <p className="date">{story.date}</p>
-            </div>
-            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
+            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+              <div className="story__section__title-box">
+                <h2 className="title">{story.title}</h2>
+                <p className="author-name">by {story.author}</p>
+                <p className="date">{story.date}</p>
+              </div>
+            </Link>
           </section>
           : 
           <section className="story__section" style={{ backgroundImage:`url(${story.img})` }}
@@ -48,12 +50,13 @@ const NewsStories = (event) => {
                 <p className="tags">{event.topic}</p>
                 <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
               </div>
-              <div className="story__section__title-box">
-                <h2 className="title">{story.title}</h2>
-                <p className="author-name">by {story.author}</p>
-                <p className="date">{story.date}</p>
-              </div>
-              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}><button>LINK</button></Link>
+              <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+                <div className="story__section__title-box">
+                  <h2 className="title">{story.title}</h2>
+                  <p className="author-name">by {story.author}</p>
+                  <p className="date">{story.date}</p>
+                </div>
+              </Link>
           </section>
         }
 <div className="mpo-modal">
@@ -67,9 +70,11 @@ const NewsStories = (event) => {
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
       <div className="mpo-modal-slide content-1">
         <div className="mpo-modal-content">
-          <h2>Write to your local <br/> Congress member</h2>
+          <Link to="/CongressAction">
+            <h2>Write to your local <br/> Congress member</h2>
+          </Link>
           <p>
-            Lorem ipsum dolo esse cillum pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Take action by writing a letter or making a call to your local congress person about this issue! 
           </p>
           <div className="mpo-modal-nav">
             <label htmlFor="modal-content-2" className="next-slide">&#8250;&#8250;</label>
@@ -80,7 +85,7 @@ const NewsStories = (event) => {
         <div className="mpo-modal-content">
           <h2>Practice a 5 minute <br/> personal meditation <br/> to east your stress</h2>
           <p>
-            Lorem esse cillum cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            You can take action just by resetting your mind and body. <a target="_blank" href="https://www.youtube.com/watch?v=inpok4MKVLM" className="external-link-meditation" rel="noreferrer">CLICK HERE</a> to take action by centering your thoughts and meditating.
           </p>
           <div className="mpo-modal-nav">
             <label htmlFor="modal-content-1" className="prev-slide">&#8249;&#8249;</label>
@@ -92,7 +97,7 @@ const NewsStories = (event) => {
         <div className="mpo-modal-content">
           <h2>Find the closest <br/> pro-choice healthcare <br/> near you</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur int occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Roe'd to Wade is a site use to track the nearest clinics near you. Share with out-of state friends.
           </p>
             <div className="mpo-modal-nav">
               <label htmlFor="modal-content-2" className="prev-slide">&#8249;&#8249;</label>
@@ -107,7 +112,7 @@ const NewsStories = (event) => {
     })
       return (
         <div>
-          {news}
+          { news }
         </div>
       )
   }      
