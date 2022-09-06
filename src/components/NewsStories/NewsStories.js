@@ -112,7 +112,7 @@ const NewsStories = (event) => {
     })
       return (
         <div>
-          {news}
+          { news }
         </div>
       )
   }      
