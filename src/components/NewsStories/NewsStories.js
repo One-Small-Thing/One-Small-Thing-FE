@@ -46,7 +46,7 @@ const NewsStories = (event) => {
           </section>
           : 
           <section  className="story__section">
-            <img className='story__section-img' src={story.img} alt="still image scene from corresponding news article"/>
+            <img className='story__section-img' src={story.img} alt="still scene from corresponding news article"/>
             <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
               <div className="story__section__title-box">
                 <div className="story__section__title-box--by">
