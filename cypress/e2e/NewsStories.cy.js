@@ -31,7 +31,7 @@ describe('NewsStories component flow', () => {
         cy.get('.story').children('.story__section').each(() => {
             cy.get('.btn')
               .should('exist');
-            cy.get('.tags')
+            cy.get('.story-container__topic')
               .should('exist');
             cy.get('.title')
               .should('exist');
