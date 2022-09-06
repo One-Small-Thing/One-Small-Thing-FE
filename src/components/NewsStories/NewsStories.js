@@ -42,7 +42,7 @@ const NewsStories = (event) => {
               </div>
             </Link>
             <div className="story__section__tag-box">
-              <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
+              <a className="btn-ta" href="#open-modal">TAKE ACTION</a>
             </div>
           </section>
           : 
@@ -58,58 +58,27 @@ const NewsStories = (event) => {
               </div>
             </Link>
             <div className="story__section__tag-box">
-              <label htmlFor="mpo-modal-controller" className="btn">TAKE ACTION</label>
+              <a className="btn-ta" href="#open-modal">TAKE ACTION</a>
             </div>
           </section>
         }
-<div className="mpo-modal">
-  <input type="checkbox" id="mpo-modal-controller-1" className="mpo-modal-open" hidden/>
-  <div className="mpo-modal-wrap">
-    <label htmlFor="mpo-modal-controller-2" className="mpo-modal-overlay"></label>
-    <div className="mpo-modal-body">
-      <label htmlFor="mpo-modal-controller-3" className="mpo-modal-close">&times;</label>
-      <input type="radio" name="content-nav" id="modal-content-1" className="modal-radio" checked hidden/>
-      <input type="radio" name="content-nav" id="modal-content-2" className="modal-radio" hidden/>
-      <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
-      <div className="mpo-modal-slide content-1">
-        <div className="mpo-modal-content">
-          <Link to="/CongressAction" className='congress-action-link'>
-            <h2 className='congress-action'>Write to your local <br/> Congress member</h2>
-          </Link>
-          <p>
-            Take action by writing a letter or making a call to your local congress person about this issue! 
-          </p>
-          <div className="mpo-modal-nav">
-            <label htmlFor="modal-content-2" className="next-slide">&#8250;&#8250;</label>
-          </div>
-        </div>
-      </div>
-      <div className="mpo-modal-slide content-2">
-        <div className="mpo-modal-content">
-          <h2>Practice a 5 minute <br/> personal meditation <br/> to east your stress</h2>
-          <p>
-            You can take action just by resetting your mind and body. <a target="_blank" href="https://www.youtube.com/watch?v=inpok4MKVLM" className="external-link-meditation" rel="noreferrer">CLICK HERE</a> to take action by centering your thoughts and meditating.
-          </p>
-          <div className="mpo-modal-nav">
-            <label htmlFor="modal-content-1" className="prev-slide">&#8249;&#8249;</label>
-            <label htmlFor="modal-content-3" className="next-slide">&#8250;&#8250;</label>
-          </div>
-        </div>
-      </div>
-      <div className="mpo-modal-slide content-3">
-        <div className="mpo-modal-content">
-          <h2>Find the closest <br/> pro-choice healthcare <br/> near you</h2>
-          <p>
-            Roe'd to Wade is a site use to track the nearest clinics near you. Share with out-of state friends.
-          </p>
-            <div className="mpo-modal-nav">
-              <label htmlFor="modal-content-2" className="prev-slide">&#8249;&#8249;</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+<div id="open-modal" className="modal-window">
+  <div>
+    <a href="#" title="Close" className="modal-close">X</a>
+      <Link to="/CongressAction" className='congress-action-link'>
+        <h1 className='congress-action'>Write to your local Congress member</h1>
+      </Link>
+    <p>Take action by writing a letter or making a call to your local congress person about this issue! </p>
+    <br/>
+    <h1>Practice a 5 minute personal meditation to ease your stress.</h1>
+    <br/>
+    <p>You can take action just by resetting your mind and body. <a target="_blank" href="https://www.youtube.com/watch?v=inpok4MKVLM" className="external-link-meditation" rel="noreferrer">CLICK HERE</a> to take action by centering your thoughts and meditating.</p>
+    <h1>Find the closest pro-choice healthcare near you</h1>
+    <br/>
+    <p>Roe'd to Wade is a site use to track the nearest clinics near you. Share with out-of state friends.</p>
   </div>
+</div>
 </div>
     )
     })
@@ -123,6 +92,3 @@ const NewsStories = (event) => {
 }
         
 export default NewsStories;
-        
-   
-        
