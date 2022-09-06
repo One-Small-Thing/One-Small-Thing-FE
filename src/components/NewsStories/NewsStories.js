@@ -6,7 +6,7 @@ import peace from "../../images/peace.jpg"
 
 const NewsStories = (event) => {
   const GET_NEWS_BY_TAG = gql`
-  query {
+  query News {
     stories(name: "${event.topic}")
       {
       date
@@ -70,8 +70,8 @@ const NewsStories = (event) => {
       <input type="radio" name="content-nav" id="modal-content-3" className="modal-radio" hidden/>
       <div className="mpo-modal-slide content-1">
         <div className="mpo-modal-content">
-          <Link to="/CongressAction">
-            <h2>Write to your local <br/> Congress member</h2>
+          <Link to="/CongressAction" className='congress-action-link'>
+            <h2 className='congress-action'>Write to your local <br/> Congress member</h2>
           </Link>
           <p>
             Take action by writing a letter or making a call to your local congress person about this issue! 
