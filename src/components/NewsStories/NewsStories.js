@@ -6,7 +6,7 @@ import peace from "../../images/peace.jpg"
 
 const NewsStories = (event) => {
   const GET_NEWS_BY_TAG = gql`
-  query {
+  query News {
     stories(name: "${event.topic}")
       {
       date
