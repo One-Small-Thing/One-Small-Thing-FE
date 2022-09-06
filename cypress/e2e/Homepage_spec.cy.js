@@ -4,10 +4,9 @@ describe('Homepage', () => {
     cy.visit('http://localhost:3000/')
   })
 
-  it('Should display a title and icon to the user', () => {
+  it('Should display a title to the user', () => {
     cy.get('.navbar').within(() => {
       cy.get('h1.navbar__main--display').should('be.visible')
-      cy.get('.navbar__img').should('be.visible')
     })
   })
 
@@ -40,7 +39,7 @@ describe('Homepage', () => {
   it('Should have the ability to redirect the user on click', () => {
     cy.get('.navbar').within(() => {
       cy.get('.navbar__main--menu--button').click()
-      cy.get(':nth-child(1) > .navbar__main--menu--link').click()
+      cy.get('.navbar__main--menu--link').eq(0).click()
     })
   })
 
