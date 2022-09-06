@@ -10,12 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(235, 231, 146, 0.8);
+  background-color: rgba(75, 141, 146, 0.6);
   border-radius: 3px;
   font-size: 1.2rem;
   box-shadow: 0 1.5rem 4rem rgba(20, 32, 40, 0.2);
 }
 .topics .topics__box:hover {
   transform: translateY(-0.5rem) scale(1.03);
-  background-color: #EBE792;
+  background-color: #82C7CC;
 }/*# sourceMappingURL=Topics.css.map */
