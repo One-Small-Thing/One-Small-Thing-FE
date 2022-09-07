@@ -24,7 +24,7 @@ const NewsStories = (event) => {
   if(loading) return "Loading..."
   if(error) return `Error! ${error.message}`
   if(!loading){
-    const news = data.headlines.map(story => {
+    const news = data.stories.map(story => {
     
     return (
       <div className="story" key={story.title}>
@@ -35,7 +35,7 @@ const NewsStories = (event) => {
               <div className="story__section__title-box">
                 <div className="story__section__title-box--by">
                   <p className="date">{story.date}</p>
-                  <p className="author-name">by {story.author}</p>
+                  <p className="author-name"> {story.author}</p>
                 </div>
                 <h2 className="title">{story.title}</h2>
               </div>
@@ -51,7 +51,7 @@ const NewsStories = (event) => {
               <div className="story__section__title-box">
                 <div className="story__section__title-box--by">
                   <p className="date">{story.date}</p>
-                  <p className="author-name">by {story.author}</p>
+                  <p className="author-name"> {story.author}</p>
                 </div>
                 <h2 className="title">{story.title}</h2>
               </div>
@@ -61,7 +61,7 @@ const NewsStories = (event) => {
             </div>
           </section>
         }
-
+  {event.topic === "Reproductive Rights" && 
 <div id="open-modal" className="modal-window">
   <div className="modal-box">
     <a href="#!" title="Close" className="modal-close">X</a>
@@ -79,6 +79,23 @@ const NewsStories = (event) => {
     <p>Roe'd To Aid brings awareness and expands access to safe, authorized clinics that provide necessary healthcare to all birthers. Share with out-of state friends.</p>
   </div>
 </div>
+  }
+  {event.topic !== "Reproductive Rights" &&
+  <div id="open-modal" className="modal-window">
+  <div className="modal-box">
+    <a href="#!" title="Close" className="modal-close">X</a>
+      <Link to="/CongressAction" className='congress-action-link'>
+        <h1 className='congress-action'>Write to your local <br/>Congress member</h1>
+      </Link>
+    <p>Take action by writing a letter or making a call to your local congress person about this issue! </p>
+    <br/>
+    <h1><a target="_blank" href="https://www.youtube.com/watch?v=inpok4MKVLM" className="external-link-meditation" rel="noreferrer">Practice a 5 minute personal meditation to ease your stress.</a></h1>
+    <br/>
+    <p>You can take action just by resetting your mind and body. Take action by centering your thoughts and meditating.</p>
+    <br/>
+  </div>
+</div>
+  }
 </div>
     )
     })
