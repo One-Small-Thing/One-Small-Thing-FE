@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery, gql } from '@apollo/client';
 import "./CongressAction.css";
+import Loading from '../Loading/Loading';
 
 const CongressAction = () => {
     
@@ -19,7 +20,7 @@ const CongressAction = () => {
     `
     const { loading, error, data } = useQuery(GET_CONGRESS_INFO)
   
-    if(loading) return "Loading..."
+    if(loading) return <Loading />
     if(error) return `Error! ${error.message}`
 
     if(!loading){
