@@ -74,21 +74,8 @@
   margin: 1rem;
 }
 
-.navbar__main--menu--hotline {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: #F6F9FC;
-  text-transform: uppercase;
-}
-
-.navbar__main--menu--phone {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: #142028;
+.navbar__main--menu ul {
+  list-style-type: none;
 }
 
 .navbar__main--menu--link:link, .navbar__main--menu--link:visited {
