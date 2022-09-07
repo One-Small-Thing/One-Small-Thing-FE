@@ -4,7 +4,7 @@ import './HotTopics.css';
 
 const HotTopics = () => {
 
-    const Array = [ "Environment", "LGBTQ+", "Reproductive Rights", "Education", "Domestic Violence", "Free and Open Computing", "Gun Control", "Immigration", "All Topics"]
+    const Array = [ "Environment", "LGBTQ+", "Reproductive Rights", "Education", "Domestic Violence", "Free and Open Computing", "Gun Control", "Immigration", "Top Stories"]
 
     const listItems = Array.map(element => {
         return (
