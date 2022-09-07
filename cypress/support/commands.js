@@ -11,16 +11,24 @@ Cypress.Commands.add("selectTopic", () => {
                 req.reply((res) => {
                     res.body.data.stories = [
                         {
-                            date: '08/31/2022',
-                            title: 'Death of Soviet Union\'s last leader, Mikhail Gorbachev, unearths Pizza Hut ad - The Washington Post',
-                            img: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CJZ2A2VIPFFGFINXOGRHNU4XFY.jpg&w=1440",
-                            url:"https://www.washingtonpost.com/nation/2022/08/31/mikhail-gorbachev-pizza-hut-soviet-russia-meme/"
+                            author: "Holly Otterbein",
+                            content: "The first candidate the group is taking on is Doug Mastriano, the Pennsylvania gubernatorial nominee who has said that LGBTQ couples should not be allowed to adopt children, gay marriage should not b… [+1903 chars]",
+                            date: "09/01/2022",
+                            description: "Agenda PAC says their aim is to defeat candidates who oppose same-sex marriage and other rights for LGBTQ Americans.",
+                            img: "https://static.politico.com/62/45/637074744bdf911429331de29a2f/https-delivery.gettyimages.com/downloads/1405088974",
+                            title: "New PAC forms to target anti-LGBTQ candidates",
+                            url: "https://www.politico.com/news/2022/09/01/,new-pac-anti-lgbtq-candidates-00054441",
+                            __typename: "TopStories"
                         },
                         {
-                            date: '08/31/2022',
-                            title: 'Death of Soviet Union\'s last leader, Mikhail Gorbachev, unearths Pizza Hut ad - The Washington Post',
-                            img: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CJZ2A2VIPFFGFINXOGRHNU4XFY.jpg&w=1440",
-                            url:"https://www.washingtonpost.com/nation/2022/08/31/mikhail-gorbachev-pizza-hut-soviet-russia-meme/"
+                            author: "Trudy Ring",
+                            content: "The father of a transgender son is objecting strongly to a set of school policies on LGBTQ+ identity issued recently by the Catholic Diocese of Sioux Falls, S.D.\r\nStudents may not advocate, celebrate… [+3676 chars]",
+                            date: "08/17/2022",
+                            description: "A Catholic diocese overseeing Catholic schools in South Dakota has issued a set of policies saying LGBTQ+ identity undermines the basis of society.",
+                            img: "https://www.advocate.com/sites/default/files/shutterstock_174338483.jpg",
+                            title: "Trans Football Player's Dad Slams School System's Anti-LGBTQ Policies",
+                            url: "https://www.advocate.com/religion/2022/8/17/,trans-football-players-dad-slams-school-systems-anti-lgbtq-policies",
+                            __typename: "TopStories"
                         }
                     ]
                     
@@ -43,16 +51,24 @@ Cypress.Commands.add("selectCongressTakeAction", () => {
                 req.reply((res) => {
                     res.body.data.stories = [
                         {
-                            date: '08/31/2022',
-                            title: 'Death of Soviet Union\'s last leader, Mikhail Gorbachev, unearths Pizza Hut ad - The Washington Post',
-                            img: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CJZ2A2VIPFFGFINXOGRHNU4XFY.jpg&w=1440",
-                            url:"https://www.washingtonpost.com/nation/2022/08/31/mikhail-gorbachev-pizza-hut-soviet-russia-meme/"
+                            author: "Holly Otterbein",
+                            content: "The first candidate the group is taking on is Doug Mastriano, the Pennsylvania gubernatorial nominee who has said that LGBTQ couples should not be allowed to adopt children, gay marriage should not b… [+1903 chars]",
+                            date: "09/01/2022",
+                            description: "Agenda PAC says their aim is to defeat candidates who oppose same-sex marriage and other rights for LGBTQ Americans.",
+                            img: "https://static.politico.com/62/45/637074744bdf911429331de29a2f/https-delivery.gettyimages.com/downloads/1405088974",
+                            title: "New PAC forms to target anti-LGBTQ candidates",
+                            url: "https://www.politico.com/news/2022/09/01/,new-pac-anti-lgbtq-candidates-00054441",
+                            __typename: "TopStories"
                         },
                         {
-                            date: '08/31/2022',
-                            title: 'Death of Soviet Union\'s last leader, Mikhail Gorbachev, unearths Pizza Hut ad - The Washington Post',
-                            img: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CJZ2A2VIPFFGFINXOGRHNU4XFY.jpg&w=1440",
-                            url:"https://www.washingtonpost.com/nation/2022/08/31/mikhail-gorbachev-pizza-hut-soviet-russia-meme/"
+                            author: "Trudy Ring",
+                            content: "The father of a transgender son is objecting strongly to a set of school policies on LGBTQ+ identity issued recently by the Catholic Diocese of Sioux Falls, S.D.\r\nStudents may not advocate, celebrate… [+3676 chars]",
+                            date: "08/17/2022",
+                            description: "A Catholic diocese overseeing Catholic schools in South Dakota has issued a set of policies saying LGBTQ+ identity undermines the basis of society.",
+                            img: "https://www.advocate.com/sites/default/files/shutterstock_174338483.jpg",
+                            title: "Trans Football Player's Dad Slams School System's Anti-LGBTQ Policies",
+                            url: "https://www.advocate.com/religion/2022/8/17/,trans-football-players-dad-slams-school-systems-anti-lgbtq-policies",
+                            __typename: "TopStories"
                         }
                     ]
                     
