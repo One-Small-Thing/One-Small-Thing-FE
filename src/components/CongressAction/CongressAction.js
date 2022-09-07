@@ -1,51 +1,51 @@
 import React from "react";
-// import { useQuery, gql } from '@apollo/client';
+import { useQuery, gql } from '@apollo/client';
 import "./CongressAction.css";
 
 const CongressAction = () => {
 
-    const data = {"congress":[
-        {
-            contact: "https://www.bennet.senate.gov/public/index.cfm/contact",
-            fullName: "Michael Bennet",
-            nextElection: "2022",
-            party: "D",
-            phone: "202-224-5852",
-            twitter: "SenBennetCo",
-            url: "https://www.bennet.senate.gov/public",
-            __typename: "Congress"
-        },
-        {
-            contact: "https://www.hickenlooper.senate.gov",
-            fullName: "John Hickenlooper",
-            nextElection: "2026",
-            party: "D",
-            phone: "202-224-5941",
-            twitter: "SenatorHick",
-            url: "https://www.hickenlooper.senate.gov",
-            __typename: "Congress"
-        }
-    ]}
+    // const data = {"congress":[
+    //     {
+    //         contact: "https://www.bennet.senate.gov/public/index.cfm/contact",
+    //         fullName: "Michael Bennet",
+    //         nextElection: "2022",
+    //         party: "D",
+    //         phone: "202-224-5852",
+    //         twitter: "SenBennetCo",
+    //         url: "https://www.bennet.senate.gov/public",
+    //         __typename: "Congress"
+    //     },
+    //     {
+    //         contact: "https://www.hickenlooper.senate.gov",
+    //         fullName: "John Hickenlooper",
+    //         nextElection: "2026",
+    //         party: "D",
+    //         phone: "202-224-5941",
+    //         twitter: "SenatorHick",
+    //         url: "https://www.hickenlooper.senate.gov",
+    //         __typename: "Congress"
+    //     }
+    // ]}
     
-    // const GET_CONGRESS_INFO = gql`
-    // query {
-    //   congress(state: "CO"){
-    //     fullName
-    //     url
-    //     party
-    //     twitter
-    //     contact
-    //     nextElection
-    //     phone
-    //   }
-    // }
-    // `
-    // const { loading, error, data } = useQuery(GET_CONGRESS_INFO)
+    const GET_CONGRESS_INFO = gql`
+    query {
+      congress(state: "CO"){
+        fullName
+        url
+        party
+        twitter
+        contact
+        nextElection
+        phone
+      }
+    }
+    `
+    const { loading, error, data } = useQuery(GET_CONGRESS_INFO)
   
-    // if(loading) return "Loading..."
-    // if(error) return `Error! ${error.message}`
+    if(loading) return "Loading..."
+    if(error) return `Error! ${error.message}`
 
-    // if(!loading){
+    if(!loading){
       const representatives = data.congress.map(person => {
         const party = person.party==='D' ? "Democrat" : "Republican";
         return (
@@ -72,6 +72,6 @@ const CongressAction = () => {
         )
     }      
 
-// }
+ }
 
 export default CongressAction;
