@@ -29,7 +29,7 @@ describe('NewsStories component flow', () => {
         });
         cy.get('.story__section').should('exist');
         cy.get('.story').children('.story__section').each(() => {
-            cy.get('.btn')
+            cy.get('.btn-ta')
               .should('exist');
             cy.get('.story-container__topic')
               .should('exist');
@@ -77,8 +77,8 @@ describe('NewsStories component flow', () => {
                 })
             }
         });
-        cy.get('.btn').eq(0).click();
-        cy.get('.mpo-modal-body').should('exist');
+        cy.get('.btn-ta').eq(0).click();
+        cy.get('.modal-window').should('exist');
         cy.contains('.congress-action', 'Write to your local Congress member');
         cy.contains('p', 'Take action by writing a letter or making a call to your local congress person about this issue!');
     })
@@ -109,7 +109,7 @@ describe('NewsStories component flow', () => {
                 })
             }
         });
-        cy.get('.btn').eq(0).click();
+        cy.get('.btn-ta').eq(0).click();
         cy.get('.congress-action').eq(0).click();
         cy.url().should('eq', 'http://localhost:3000/CongressAction');
     })
