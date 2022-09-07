@@ -119,14 +119,31 @@
 }
 
 .story .modal-window h1 {
-  font-size: 150%;
+  font-size: 2.5rem;
+  font-weight: bolder;
   margin: 0 0 15px;
+  margin-top: 20px;
+  color: #DB8D72;
+}
+
+.story .modal-window h1:hover {
+  color: #73AEDE;
+  border: 1px solid #E1BEA1;
+  cursor: pointer;
+}
+
+.story .modal-window p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 0 0 15px;
+  color: #142028;
 }
 
 .story .modal-close {
-  color: #aaa;
+  color: #142028;
   line-height: 50px;
-  font-size: 80%;
+  font-size: 2rem;
+  font-weight: bolder;
   position: absolute;
   right: 0;
   text-align: center;
@@ -137,6 +154,7 @@
 
 .story .modal-close:hover {
   color: black;
+  cursor: pointer;
 }
 
 .story a {

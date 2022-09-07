@@ -84,82 +84,100 @@
         margin-bottom: 5%;
     }
     
-        .modal-window {
-            position: fixed;
-            background: rgba(0, 0, 0, .8);
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 999;
-            visibility: hidden;
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.3s;
-    
-            &:target {
-                visibility: visible;
-                opacity: 1;
-                pointer-events: auto;
-            }
-    
-            &>div {
-                width: 400px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                padding: 2em;
-                background: white;
-            }
-    
-            header {
-                font-weight: bold;
-            }
-    
-            h1 {
-                font-size: 150%;
-                margin: 0 0 15px;
-            }
+    .modal-window {
+        position: fixed;
+        background: rgba(0, 0, 0, .8);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+
+        &:target {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
         }
-    
-        .modal-close {
-            color: #aaa;
-            line-height: 50px;
-            font-size: 80%;
+
+        &>div {
+            width: 400px;
             position: absolute;
-            right: 0;
-            text-align: center;
-            top: 0;
-            width: 70px;
-            text-decoration: none;
-    
-            &:hover {
-                color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2em;
+            background: white;
+        }
+
+        header {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bolder;
+            margin: 0 0 15px;
+            margin-top: 20px;
+            color: $color-salmon;
+            
+            &:hover{
+               color:$color-blue;
+               border: 1px solid $color-tan;
+               cursor:pointer;
             }
         }
-    
-        a {
-            color: inherit;
-            text-decoration: none;
+
+        p{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin: 0 0 15px;
+            color: $color-black;
         }
-    
-        .container {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+    }
+
+    .modal-close {
+        color: $color-black;
+        line-height: 50px;
+        font-size: 2rem;
+        font-weight: bolder;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
         }
+    }
     
-        .modal-window {
-            &>div {
-                border-radius: 1rem;
-            }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .modal-window {
+        &>div {
+            border-radius: 1rem;
         }
-    
-        .modal-window div:not(:last-of-type) {
-            margin-bottom: 15px;
-        }
+    }
+
+    .modal-window div:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
     
 
 }
