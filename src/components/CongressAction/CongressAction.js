@@ -5,7 +5,7 @@ import "./CongressAction.css";
 const CongressAction = () => {
     
     const GET_CONGRESS_INFO = gql`
-    query {
+    query Representatives{
       congress(state: "CO"){
         fullName
         url
