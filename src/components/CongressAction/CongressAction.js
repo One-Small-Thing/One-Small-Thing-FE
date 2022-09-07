@@ -3,29 +3,6 @@ import { useQuery, gql } from '@apollo/client';
 import "./CongressAction.css";
 
 const CongressAction = () => {
-
-    // const data = {"congress":[
-    //     {
-    //         contact: "https://www.bennet.senate.gov/public/index.cfm/contact",
-    //         fullName: "Michael Bennet",
-    //         nextElection: "2022",
-    //         party: "D",
-    //         phone: "202-224-5852",
-    //         twitter: "SenBennetCo",
-    //         url: "https://www.bennet.senate.gov/public",
-    //         __typename: "Congress"
-    //     },
-    //     {
-    //         contact: "https://www.hickenlooper.senate.gov",
-    //         fullName: "John Hickenlooper",
-    //         nextElection: "2026",
-    //         party: "D",
-    //         phone: "202-224-5941",
-    //         twitter: "SenatorHick",
-    //         url: "https://www.hickenlooper.senate.gov",
-    //         __typename: "Congress"
-    //     }
-    // ]}
     
     const GET_CONGRESS_INFO = gql`
     query {

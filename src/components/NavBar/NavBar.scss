@@ -74,6 +74,23 @@
                 margin: 1rem;
             }
 
+            &--hotline {
+                display: inline-block;
+                font-size: 2rem;
+                font-weight: 300;
+                padding: 1rem 2rem;
+                color: $color-background;
+                text-transform: uppercase;
+            }
+
+            &--phone {
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 1rem 2rem;
+                color: $color-black;
+            }
+
             &--link {
                 &:link,
                 &:visited {

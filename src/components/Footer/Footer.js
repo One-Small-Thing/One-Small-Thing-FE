@@ -4,8 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <p>National Domestic Violence Hotline
-1-800-799-SAFE (7233)</p>
+            <p> National Emotional & Disaster Distress Helpline 1-800-985-5990</p>
         </footer>
     )
 }
