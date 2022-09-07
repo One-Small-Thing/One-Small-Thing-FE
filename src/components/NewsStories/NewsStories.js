@@ -64,7 +64,7 @@ const NewsStories = (event) => {
 
 <div id="open-modal" className="modal-window">
   <div className="modal-box">
-    <a href="#" title="Close" className="modal-close">X</a>
+    <a href="#!" title="Close" className="modal-close">X</a>
       <Link to="/CongressAction" className='congress-action-link'>
         <h1 className='congress-action'>Write to your local <br/>Congress member</h1>
       </Link>
