@@ -20,7 +20,6 @@ const NewsStories = (event) => {
   }
   `
   const { loading, error, data } = useQuery(GET_NEWS_BY_TAG, {name: event.topic})
-  console.log(data)
 
   if(loading) return "Loading..."
   if(error) return `Error! ${error.message}`
