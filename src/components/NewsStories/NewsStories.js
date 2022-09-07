@@ -75,9 +75,9 @@ const NewsStories = (event) => {
     <br/>
     <p>You can take action just by resetting your mind and body. Take action by centering your thoughts and meditating.</p>
     <br/>
-    <h1>Find the closest pro-choice healthcare near you</h1>
+    <h1><a target="_blank" href="https://roed-to-aide-fe.herokuapp.com/" rel="noreferrer">Find the closest pro-choice healthcare near you</a></h1>
     <br/>
-    <p>Roe'd to Wade is a site use to track the nearest clinics near you. Share with out-of state friends.</p>
+    <p>Roe'd To Aid brings awareness and expands access to safe, authorized clinics that provide necessary healthcare to all birthers. Share with out-of state friends.</p>
   </div>
 </div>
 </div>
