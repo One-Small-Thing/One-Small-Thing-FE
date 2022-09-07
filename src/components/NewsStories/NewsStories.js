@@ -3,6 +3,7 @@ import { useQuery, gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import "./NewsStories.css"
 import peace from "../../images/peace.jpg"
+import Loading from "../Loading/Loading";
 
 const NewsStories = (event) => {
   const GET_NEWS_BY_TAG = gql`
@@ -21,7 +22,7 @@ const NewsStories = (event) => {
   `
   const { loading, error, data } = useQuery(GET_NEWS_BY_TAG, {name: event.topic})
 
-  if(loading) return "Loading..."
+  if(loading) return <Loading/>
   if(error) return `Error! ${error.message}`
   if(!loading){
     const news = data.stories.map(story => {
@@ -102,7 +103,9 @@ const NewsStories = (event) => {
       return (
         <div className="story-container">
           <h2 className="story-container__topic">{event.topic}</h2>
-          { news }
+          <div className="story-container__news">
+            { news }
+          </div>
         </div>
       )
   }      
