@@ -48,7 +48,7 @@ describe('NewsStories component flow', () => {
     })
 
     it('Should be able to see the footer', () => {
-        cy.get('.footer').should('contain', 'Hotline');
+        cy.get('.footer').should('contain', 'Helpline');
     })
 
     it('Should be able to click the Take Action button and see the CongressAction option', () => {
