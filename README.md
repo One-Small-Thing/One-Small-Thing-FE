@@ -1,72 +1,98 @@
-![GitHub Actions Workflow](https://github.com/One-Small-Thing/One-Small-Thing-FE/actions/workflows/pr.js.yml/badge.svg)
+# One Small Thing - FE
+### An app to make change and take action amongst the chaos of the world. 
 
-# Getting Started with Create React App
+For this group project, the goal was to create a mobile-first React application using Apollo/Graph QL that allows users the capability to take action on hot topic news stories they browse. The aim is to empower the users to change the world for the better. After users select a topic they are interested in, they are navigated to the 20 most recent stories to either read more on the article, or there is a button encouraging them "take action" on each story. If a user clicks the button, they are navigated to a modal that displays options of actions to take. They are then navigated to an external site. Check it out the project [deployed on GitHub here](https://one-small-thing.github.io/One-Small-Thing-FE/) !
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Table of Contents
+- [Project Specs](#project-specs)
+- [Illustrations](#illustrations)
+- [Setup](#setup)
+- [Project Management](#project-management)
+- [Future Features](#future-features)
+- [Contributors](#contributors)
+- [Technologies](#technologies)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Specs
 
-### `npm start`
+One Small Thing is a React application that uses React Router built in 12 days at the [Turing School of Software and Design](https://turing.edu/). The goal of this solo [project](https://mod4.turing.edu/projects/capstone/) was to solidify and demonstrate the understanding of:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React fundamentals
+- Apollo / Graph QL
+- Test React components & asynchronous JS using Cypress
+- Create multi page UX using React Router
+- Use an agile process to turn well defined requirements into deployed and production ready software
+- Gain experience dividing applications into components and domains of responsibilities to facilitate multi-developer teams. 
+- Practice an advanced, professional git workflow including a Pull Request Review
+- Gain experience using continuous integration tools to build and automate the deployment of features
+- Build applications that execute in development, test, CI, and production environments
+- Focus on communication between front-end and back-end teams in order to complete and deploy features that have been outlined by the project spec
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Illustrations
 
-### `npm test`
+### Home Page, News Stories, and Articles
+A user selects a topic of interest and can read more about a story they are interested in 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![OST home-page gif]()
 
-### `npm run build`
+### Take Action
+A user may select which action hey would like to take
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![OST gif and external link]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**[Back to top](#table-of-contents)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `npm run eject`
+- In your terminal, clone the repo
+- `https://github.com/One-Small-Thing/One-Small-Thing-FE.git`
+- Make a new directory and cd into it
+- Install NPM packages
+- `npm install`
+- Do NOT run `npm audit fix --force`
+- Then type `npm start` . This runs the app in the development mode.
+- Open http://localhost:3000 to view it in your browser.
+- The browser should then deploy using a local host
+- Enjoy using One Small Thing!
+- NOTE: Make sure that you type Control + C in your terminal when you are done using the application. This ensure the server will stop running before your close your Terminal.
+- Start the server to see the local site `npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Management
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- We used a combined BE/FE [Github Project Board](https://github.com/orgs/One-Small-Thing/projects/2/views/1) to stay on task and meet the deadline, daily stand-ups, async communication and info sharing through Slack, retros, and had check-ins with our project mentor and manager. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Features
 
-## Learn More
+- Inform the user if their answer was right or wrong in real time as they hit the submit button
+- Allow a user to search through laureates in a drop-down list to learn more about them 
+- Responsive design to allow for better UX/UI on tablets / mobile devices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributors (front-end)
 
-### Code Splitting
+- [Cami Anderson](https://github.com/camianderson)
+- [Neil Linton](https://github.com/Neil-B-Linton)
+- [Jordan Sullivan](https://github.com/jordan-sullivan)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributors (back-end)
+- [Sai Hall](https://github.com/SaiHall)
+- [Stirling Hostetter](https://github.com/stirlhoss)
+- [Colin Reinhart](https://github.com/ColinReinhart)
+- [Matt Deming](https://github.com/Deming-Matt)
+           
 
-### Analyzing the Bundle Size
+## Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React
+- React Router
+- Cypress
+- ES6 Javascript
+- SCSS / SASS
+- Semantic HTML
+- Fetch API
+- Hooks
+- Graph QL / Apollo
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**[Back to top](#table-of-contents)**
