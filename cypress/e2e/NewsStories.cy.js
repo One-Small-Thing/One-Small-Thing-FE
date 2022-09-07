@@ -78,7 +78,7 @@ describe('NewsStories component flow', () => {
             }
         });
         cy.get('.btn-ta').eq(0).click();
-        cy.get('.mpo-modal-body').should('exist');
+        cy.get('.modal-window').should('exist');
         cy.contains('.congress-action', 'Write to your local Congress member');
         cy.contains('p', 'Take action by writing a letter or making a call to your local congress person about this issue!');
     })
