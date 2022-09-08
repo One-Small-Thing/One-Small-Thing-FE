@@ -36,7 +36,7 @@ A user selects a topic of interest and can read more about a story they are inte
 ![OST home-page gif](https://media.giphy.com/media/FLOmtilCoTYZ3gvV9D/giphy.gif)
 
 ### Take Action
-A user may select which action hey would like to take
+A user may select which action they would like to take
 
 ![OST gif and external link](https://media.giphy.com/media/3HT2Gcx0UPabcvXs53/giphy.gif)
 
