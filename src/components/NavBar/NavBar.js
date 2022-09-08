@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className='navbar'>
             <div className='navbar__main'>
-                <Link to="/">
+                <Link to="/One-Small-Thing-FE">
                     <h1 className='navbar__main--display'>One Small Thing</h1>
                 </Link>
                 <div className='navbar__main--menu'>
@@ -19,12 +19,12 @@ const NavBar = () => {
                     <nav className='navbar__main--menu--nav'>
                         <ul className='navbar__main--menu--list'>
                             <li className='navbar__main--menu--item'>
-                                <Link to="/About" className='navbar__main--menu--link'>
+                                <Link to="/One-Small-Thing-FE/About" className='navbar__main--menu--link'>
                                     <div className='navbar__main--menu--link'>About</div>
                                 </Link>
                             </li>
                             <li className='navbar__main--menu--item'>
-                                <Link to="/" className="navbar__main--menu--link">
+                                <Link to="/One-Small-Thing-FE/" className="navbar__main--menu--link">
                                     <div className='navbar__main--menu--link'>Home</div>
                                 </Link>
                             </li>

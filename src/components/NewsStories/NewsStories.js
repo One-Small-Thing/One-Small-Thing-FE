@@ -32,7 +32,7 @@ const NewsStories = (event) => {
         {!story.img && !story.author ?
         <section  className="story__section">
             <img className='story__section-img' src={peace} alt="woman with making peace symbol with hand in air at a rally"/>
-            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+            <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
               <div className="story__section__title-box">
                 <div className="story__section__title-box--by">
                   <p className="date">{story.date}</p>
@@ -48,7 +48,7 @@ const NewsStories = (event) => {
           : 
           <section  className="story__section">
             <img className='story__section-img' src={story.img} alt="still scene from corresponding news article"/>
-            <Link className="Link__Article" to={{ pathname: `/Article/${story.title}`, state: story.url }}>
+            <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
               <div className="story__section__title-box">
                 <div className="story__section__title-box--by">
                   <p className="date">{story.date}</p>
@@ -66,7 +66,7 @@ const NewsStories = (event) => {
 <div id="open-modal" className="modal-window">
   <div className="modal-box">
     <a href="#!" title="Close" className="modal-close">X</a>
-      <Link to="/CongressAction" className='congress-action-link'>
+      <Link to="/One-Small-Thing-FE/CongressAction" className='congress-action-link'>
         <h1 className='congress-action'>Write to your local <br/>Congress member</h1>
       </Link>
     <p>Take action by writing a letter or making a call to your local congress person about this issue! </p>
@@ -85,7 +85,7 @@ const NewsStories = (event) => {
   <div id="open-modal" className="modal-window">
   <div className="modal-box">
     <a href="#!" title="Close" className="modal-close">X</a>
-      <Link to="/CongressAction" className='congress-action-link'>
+      <Link to="/One-Small-Thing-FE/CongressAction" className='congress-action-link'>
         <h1 className='congress-action'>Write to your local <br/>Congress member</h1>
       </Link>
     <p>Take action by writing a letter or making a call to your local congress person about this issue! </p>
