@@ -6,7 +6,7 @@ import './Topics.css';
 const Topics = ({topic}) => {
 
     return (
-        <Link to={`/NewsStories/${topic}`} className='topics'>
+        <Link to={`/One-Small-Thing-FE/NewsStories/${topic}`} className='topics'>
             <div className='topics__box'>
                 <p>{topic}</p>
             </div>
