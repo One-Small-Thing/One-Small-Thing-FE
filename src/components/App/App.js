@@ -15,11 +15,11 @@ const App = () => {
   return (
       <div className="App">
         <NavBar />
-        <Route exact path="/" render={() => <HotTopics />} />
-        <Route exact path="/About" component={About} />
-        <Route path='/NewsStories/:topic' render={( { match } ) => { return (<NewsStories topic={match.params.topic}/>)} }/>
-        <Route path='/Article' component={Article} />
-        <Route exact path="/CongressAction" render={() => <CongressAction />} />
+        <Route exact path="/One-Small-Thing-FE" render={() => <HotTopics />} />
+        <Route exact path="/One-Small-Thing-FE/About" component={About} />
+        <Route path='/One-Small-Thing-FE/NewsStories/:topic' render={( { match } ) => { return (<NewsStories topic={match.params.topic}/>)} }/>
+        <Route path='/One-Small-Thing-FE/Article' component={Article} />
+        <Route exact path="/One-Small-Thing-FE/CongressAction" render={() => <CongressAction />} />
         <Footer />
       </div>
 

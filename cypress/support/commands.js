@@ -1,7 +1,7 @@
 import { aliasQuery, hasOperationName } from "../utils/graphql-test-utils";
 
 Cypress.Commands.add("selectTopic", () => {
-  cy.visit("http://localhost:3000/");
+  cy.visit("http://localhost:3000/One-Small-Thing-FE/");
   cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
   cy.intercept(
     "POST",
@@ -49,7 +49,7 @@ Cypress.Commands.add("selectTopic", () => {
 });
 
 Cypress.Commands.add("selectCongressTakeAction", () => {
-  cy.visit("http://localhost:3000/");
+  cy.visit("http://localhost:3000/One-Small-Thing-FE");
   cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
   cy.intercept(
     "POST",
