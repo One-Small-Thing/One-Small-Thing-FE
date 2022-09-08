@@ -64,10 +64,9 @@ A user may select which action they would like to take
 
 ## Future Features
 
-- Inform the user if their answer was right or wrong in real time as they hit the submit button
-- Allow a user to search through laureates in a drop-down list to learn more about them 
-- Responsive design to allow for better UX/UI on tablets / mobile devices
-
+- Allow a user to select their location so that their actionable items are geo-specific.
+- Add more dynamic actionable items to each news story for a user to take action. 
+- Allow a user to save their actions and see what actions they have taken. 
 
 ## Contributors (front-end)
 
