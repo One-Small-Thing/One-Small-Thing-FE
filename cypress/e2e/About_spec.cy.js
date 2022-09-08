@@ -1,6 +1,6 @@
 describe('About Section', () => {
   beforeEach('A user should see an about section', () => {
-    cy.visit("http://localhost:3000/About")
+    cy.visit("http://localhost:3000/One-Small-Thing-FE/About")
   })
   it('Should a title to the user', () => {
     cy.get('.about-main > h1').contains('About our application')

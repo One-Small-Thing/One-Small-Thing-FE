@@ -1,6 +1,6 @@
 describe("Homepage", () => {
   beforeEach("A user should see the homepage", () => {
-    cy.visit("http://localhost:3000/");
+    cy.visit("http://localhost:3000/One-Small-Thing-FE/");
   });
 
   it("Should display a title to the user", () => {
@@ -39,7 +39,7 @@ describe("Homepage", () => {
     cy.get(".navbar").within(() => {
       cy.get(".navbar__main--menu--button").click();
       cy.get(".navbar__main--menu--link").eq(0).click();
-      cy.url().should("eq", "http://localhost:3000/About");
+      cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/About");
     });
   });
 
@@ -63,6 +63,6 @@ describe("Homepage", () => {
     cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').should("be.visible");
     cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
     cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').click();
-    cy.url().should("eq", "http://localhost:3000/NewsStories/LGBTQ+");
+    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/NewsStories/LGBTQ+");
   });
 });

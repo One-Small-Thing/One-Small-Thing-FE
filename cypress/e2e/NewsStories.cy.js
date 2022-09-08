@@ -11,7 +11,7 @@ describe("NewsStories component flow", () => {
 
   it("Should be able to go back to the homepage", () => {
     cy.get(".navbar__main--display").click();
-    cy.url().should("eq", "http://localhost:3000/");
+    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/");
   });
 
   it("Should display a hamburger menu button", () => {
@@ -61,6 +61,6 @@ describe("NewsStories component flow", () => {
   it("Should be able to click the CongressAction option inside the modal", () => {
     cy.get(".btn-ta").eq(0).click();
     cy.get(".congress-action").eq(0).click();
-    cy.url().should("eq", "http://localhost:3000/CongressAction");
+    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/CongressAction");
   });
 });

@@ -11,7 +11,7 @@ describe("CongressAction Flow", () => {
 
   it("Should be able to go back to the homepage", () => {
     cy.get(".navbar__main--display").click();
-    cy.url().should("eq", "http://localhost:3000/");
+    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/");
   });
 
   it("Should display a hamburger menu button", () => {
