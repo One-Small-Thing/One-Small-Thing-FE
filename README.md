@@ -15,7 +15,7 @@ For this group project, the goal was to create a mobile-first React application 
 
 ## Project Specs
 
-One Small Thing is a React application that uses React Router built in 12 days at the [Turing School of Software and Design](https://turing.edu/). The goal of this solo [project](https://mod4.turing.edu/projects/capstone/) was to solidify and demonstrate the understanding of:
+One Small Thing is a React application that uses React Router built in 12 days at the [Turing School of Software and Design](https://turing.edu/). The goal of this group [project](https://mod4.turing.edu/projects/capstone/) was to solidify and demonstrate the understanding of:
 
 - React fundamentals
 - Apollo / Graph QL
