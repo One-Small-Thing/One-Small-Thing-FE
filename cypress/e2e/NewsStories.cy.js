@@ -3,24 +3,24 @@ describe("NewsStories component flow", () => {
     cy.selectTopic();
   });
 
-  it("Should display a title to the user", () => {
+  it.skip("Should display a title to the user", () => {
     cy.get(".navbar").within(() => {
       cy.get("h1.navbar__main--display").should("be.visible");
     });
   });
 
-  it("Should be able to go back to the homepage", () => {
+  it.skip("Should be able to go back to the homepage", () => {
     cy.get(".navbar__main--display").click();
     cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/");
   });
 
-  it("Should display a hamburger menu button", () => {
+  it.skip("Should display a hamburger menu button", () => {
     cy.get(".navbar").within(() => {
       cy.get(".navbar__main--menu--button").should("be.visible");
     });
   });
 
-  it("Should display all the news selected by topic", () => {
+  it.skip("Should display all the news selected by topic", () => {
     cy.get(".story__section").should("exist");
     cy.get(".story")
       .children(".story__section")
@@ -33,11 +33,11 @@ describe("NewsStories component flow", () => {
       });
   });
 
-  it("Should be able to see the footer", () => {
+  it.skip("Should be able to see the footer", () => {
     cy.get(".footer").should("contain", "Helpline");
   });
 
-  it("Should be able to click the Take Action button and see the CongressAction option", () => {
+  it.skip("Should be able to click the Take Action button and see the CongressAction option", () => {
     cy.get(".btn-ta").eq(0).click();
     cy.get(".modal-window").should("exist");
     cy.contains(".congress-action", "Write to your local Congress member");
@@ -47,7 +47,7 @@ describe("NewsStories component flow", () => {
     );
   });
 
-  it("Should be able to click the Take Action button and see the Meditation option", () => {
+  it.skip("Should be able to click the Take Action button and see the Meditation option", () => {
     cy.contains(
       ".external-link-meditation",
       "Practice a 5 minute personal meditation to ease your stress."
@@ -58,7 +58,7 @@ describe("NewsStories component flow", () => {
     );
   });
 
-  it("Should be able to click the CongressAction option inside the modal", () => {
+  it.skip("Should be able to click the CongressAction option inside the modal", () => {
     cy.get(".btn-ta").eq(0).click();
     cy.get(".congress-action").eq(0).click();
     cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/CongressAction");
