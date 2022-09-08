@@ -33,12 +33,12 @@ One Small Thing is a React application that uses React Router built in 12 days a
 ### Home Page, News Stories, and Articles
 A user selects a topic of interest and can read more about a story they are interested in 
 
-![OST home-page gif]()
+![OST home-page gif](https://media.giphy.com/media/FLOmtilCoTYZ3gvV9D/giphy.gif)
 
 ### Take Action
 A user may select which action hey would like to take
 
-![OST gif and external link]()
+![OST gif and external link](https://media.giphy.com/media/3HT2Gcx0UPabcvXs53/giphy.gif)
 
 **[Back to top](#table-of-contents)**
 
