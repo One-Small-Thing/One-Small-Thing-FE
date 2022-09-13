@@ -57,8 +57,13 @@ A user may select which action they would like to take
 - NOTE: Make sure that you type Control + C in your terminal when you are done using the application. This ensure the server will stop running before your close your Terminal.
 - Start the server to see the local site `npm start`
 
+-Check out the [BackEnd here] (https://github.com/One-Small-Thing/One-Small-Thing-BE)
+
 
 ## Project Management
+
+- We used a miro board to create a wireframe and took color and layout inspiration from these sources: 
+![Screen Shot 2022-09-13 at 8 45 55 AM](https://user-images.githubusercontent.com/95270427/189999418-f2e38f1b-d9f2-4c9f-ae32-366e7b4828fd.png)
 
 - We used a combined BE/FE [Github Project Board](https://github.com/orgs/One-Small-Thing/projects/2/views/1) to stay on task and meet the deadline, daily stand-ups, async communication and info sharing through Slack, retros, and had check-ins with our project mentor and manager. 
 
