@@ -1,6 +1,6 @@
 describe('Article', () => {
   beforeEach('A user should be on the News Article Page', () => {
-    cy.visit("http://localhost:3000/One-Small-Thing-FE/")
+    cy.visit("http://localhost:3000/One-Small-Thing-FE/Article")
     cy.get('[href="/NewsStories/Environment"] > .topics__box').click()
     cy.get(':nth-child(1) > .story__section > .Link__Article > .story__section__title-box > .title').click()
   })
