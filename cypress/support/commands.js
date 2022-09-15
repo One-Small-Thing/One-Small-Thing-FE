@@ -2,7 +2,7 @@ import { aliasQuery, hasOperationName } from "../utils/graphql-test-utils";
 
 Cypress.Commands.add("selectTopic", () => {
   cy.visit("http://localhost:3000/One-Small-Thing-FE/");
-  cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
+  cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
   cy.intercept(
     "POST",
     "https://one-small-thing.herokuapp.com/graphql",
@@ -44,13 +44,13 @@ Cypress.Commands.add("selectTopic", () => {
       }
     }
   ).as("getNews");
-  cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').click();
+  cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').click();
   cy.wait("@getNews");
 });
 
 Cypress.Commands.add("selectCongressTakeAction", () => {
   cy.visit("http://localhost:3000/One-Small-Thing-FE");
-  cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
+  cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
   cy.intercept(
     "POST",
     "https://one-small-thing.herokuapp.com/graphql",
@@ -70,7 +70,7 @@ Cypress.Commands.add("selectCongressTakeAction", () => {
                 "Agenda PAC says their aim is to defeat candidates who oppose same-sex marriage and other rights for LGBTQ Americans.",
               img: "https://static.politico.com/62/45/637074744bdf911429331de29a2f/https-delivery.gettyimages.com/downloads/1405088974",
               title: "New PAC forms to target anti-LGBTQ candidates",
-              url: "https://www.politico.com/news/2022/09/01/,new-pac-anti-lgbtq-candidates-00054441",
+              url: "http://localhost:3000/One-Small-Thing-FE/Article/New%20PAC%20forms%20to%20target%20anti-LGBTQ%20candidates",
               __typename: "TopStories",
             },
             {
@@ -91,7 +91,7 @@ Cypress.Commands.add("selectCongressTakeAction", () => {
       }
     }
   ).as("getNews");
-  cy.get('[href="/NewsStories/LGBTQ+"] > .topics__box').click();
+  cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').click();
   cy.wait("@getNews");
   cy.get(".btn-ta").eq(0).click();
   cy.intercept(
