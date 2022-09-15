@@ -3,32 +3,32 @@ describe("CongressAction Flow", () => {
     cy.selectCongressTakeAction();
   });
 
-  it.skip("Should display a title to the user", () => {
+  it("Should display a title to the user", () => {
     cy.get(".navbar").within(() => {
       cy.get("h1.navbar__main--display").should("be.visible");
     });
   });
 
-  it.skip("Should be able to go back to the homepage", () => {
+  it("Should be able to go back to the homepage", () => {
     cy.get(".navbar__main--display").click();
-    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/");
+    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE");
   });
 
-  it.skip("Should display a hamburger menu button", () => {
+  it("Should display a hamburger menu button", () => {
     cy.get(".navbar").within(() => {
       cy.get(".navbar__main--menu--button").should("be.visible");
     });
   });
 
-  it.skip("Should be able to see the footer", () => {
+  it("Should be able to see the footer", () => {
     cy.get(".footer").should("contain", "Helpline");
   });
 
-  it.skip('Should display the title "Congress Members"', () => {
+  it('Should display the title "Congress Members"', () => {
     cy.get(".congress-container__title").should("exist");
   });
 
-  it.skip("Should display the congress members", () => {
+  it("Should display the congress members", () => {
     cy.get(".congress-container__members").should("exist");
     cy.get(".congress").should("exist");
     cy.get(".congress").eq(0).contains(".name", "Michael Bennet");
