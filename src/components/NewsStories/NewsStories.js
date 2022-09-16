@@ -33,7 +33,7 @@ const NewsStories = (event) => {
         <section  className="story__section">
             <img className='story__section-img' src={peace} alt="woman with making peace symbol with hand in air at a rally"/>
             <div className="story__section-desc">
-              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
+              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url, topic: event.topic }}>
                 <div className="story__section__title-box">
                   <div className="story__section__title-box--by">
                     <p className="date">{story.date}</p>
@@ -51,7 +51,7 @@ const NewsStories = (event) => {
           <section  className="story__section">
             <img className='story__section-img' src={story.img} alt="still scene from corresponding news article"/>
             <div className="story__section-desc">
-              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
+              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url, topic: event.topic}}>
                 <div className="story__section__title-box">
                   <div className="story__section__title-box--by">
                     <p className="date">{story.date}</p>

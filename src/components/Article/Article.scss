@@ -1,13 +1,24 @@
+@import '../../variables/variables.scss';
 .article{
     display:flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    flex-direction: column;
     margin-bottom: 1rem;
    
     &__main{
-        height: 85vh;
+        height: 80vh;
         width: 80%;
         background-color: white;
+    }
+
+    &__button {
+        background: rgba($color-turquoise-dark, .8);
+        border: transparent;
+        border-radius: 1rem;
+        cursor: pointer;
+        padding: .5rem 1.5rem;
+        text-decoration: none;
+        margin-top: 1rem;
     }
 }

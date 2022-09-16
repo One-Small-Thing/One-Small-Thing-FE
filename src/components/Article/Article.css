@@ -2,12 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
-
 .article__main {
-  height: 85vh;
+  height: 80vh;
   width: 80%;
   background-color: white;
 }
+.article__button {
+  background: rgba(75, 141, 146, 0.8);
+  border: transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Article.css.map */
