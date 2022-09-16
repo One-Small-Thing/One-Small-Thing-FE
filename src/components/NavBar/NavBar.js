@@ -11,7 +11,7 @@ const NavBar = () => {
                     <h1 className='navbar__main--display'>One Small Thing</h1>
                 </Link>
                 <div className='navbar__main--menu'>
-                    <input type='checkbox' className='navbar__main--menu--checkbox' id='navi-toggle'/>
+                    <input type='checkbox' className='navbar__main--menu--checkbox' id='navi-toggle' />
                     <label htmlFor='navi-toggle' className='navbar__main--menu--button'>
                         <span className='navbar__main--menu--icon'>&nbsp;</span>
                     </label>
@@ -19,12 +19,12 @@ const NavBar = () => {
                     <nav className='navbar__main--menu--nav'>
                         <ul className='navbar__main--menu--list'>
                             <li className='navbar__main--menu--item'>
-                                <Link to="/One-Small-Thing-FE/About" className='navbar__main--menu--link'>
+                                <Link to="/One-Small-Thing-FE/About" className='navbar__main--menu--link' onClick={() => {document.getElementById("navi-toggle").checked = false}} >
                                     <div className='navbar__main--menu--link'>About</div>
                                 </Link>
                             </li>
                             <li className='navbar__main--menu--item'>
-                                <Link to="/One-Small-Thing-FE/" className="navbar__main--menu--link">
+                                <Link to="/One-Small-Thing-FE/" className="navbar__main--menu--link" onClick={() => {document.getElementById("navi-toggle").checked = false}} >
                                     <div className='navbar__main--menu--link'>Home</div>
                                 </Link>
                             </li>
