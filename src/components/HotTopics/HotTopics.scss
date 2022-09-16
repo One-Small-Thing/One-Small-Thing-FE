@@ -1,6 +1,6 @@
 @import '../../variables/variables.scss';
 .hot-topics {
-    height: 85vh;
+    height: 85%;
     background-color: transparent;
     padding-top: 1rem;
     display: flex;
@@ -22,4 +22,10 @@
         justify-content: center;
     }
 
+}
+
+@media (min-width: 380px){
+    .hot-topics {
+        height: 85vh;
+    }
 }
