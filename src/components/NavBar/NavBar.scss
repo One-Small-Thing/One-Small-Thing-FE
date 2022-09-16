@@ -73,6 +73,15 @@
             &--item {
                 margin: 1rem;
             }
+
+            &--hotline {
+                color: rgb(104, 103, 103);
+                font-size: 2rem;
+
+                p, li {
+                    font-size: 1.5rem; 
+                }
+            }
             
             ul {
                 list-style-type: none;
