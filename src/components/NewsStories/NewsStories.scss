@@ -37,15 +37,26 @@
         width: 75%;
 
         &-img {
-            height: 55%;
+            height: 45%;
             width: 100%;
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
         }
+
+        &-desc {
+            padding: 2rem;
+            height: 45%;
+            width: 100%;
+            overflow: hidden;
+        }
+
         &__tag-box{
             display: flex;
             align-items: center;
             justify-content:center;
+            height: 10%;
+            width: 100%;
+            margin-top: 1rem;
         }
         
         &__title-box {
@@ -56,9 +67,11 @@
             
             .title {
                 color: black;
-                font-size: 1.7em;
+                font-size: 1.5em;
                 margin-top: 1rem;
+                margin-bottom: 1rem;
             }
+
             &--by{
                 display: flex;
                 flex-direction: column;

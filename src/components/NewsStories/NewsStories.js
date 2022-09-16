@@ -32,15 +32,17 @@ const NewsStories = (event) => {
         {!story.img && !story.author ?
         <section  className="story__section">
             <img className='story__section-img' src={peace} alt="woman with making peace symbol with hand in air at a rally"/>
-            <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
-              <div className="story__section__title-box">
-                <div className="story__section__title-box--by">
-                  <p className="date">{story.date}</p>
-                  <p className="author-name"> {story.author}</p>
+            <div className="story__section-desc">
+              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
+                <div className="story__section__title-box">
+                  <div className="story__section__title-box--by">
+                    <p className="date">{story.date}</p>
+                    <p className="author-name"> {story.author}</p>
+                  </div>
+                  <h2 className="title">{story.title}</h2>
                 </div>
-                <h2 className="title">{story.title}</h2>
-              </div>
-            </Link>
+              </Link>
+            </div>
             <div className="story__section__tag-box">
               <a className="btn-ta" href="#open-modal">TAKE ACTION</a>
             </div>
@@ -48,15 +50,17 @@ const NewsStories = (event) => {
           : 
           <section  className="story__section">
             <img className='story__section-img' src={story.img} alt="still scene from corresponding news article"/>
-            <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
-              <div className="story__section__title-box">
-                <div className="story__section__title-box--by">
-                  <p className="date">{story.date}</p>
-                  <p className="author-name"> {story.author}</p>
+            <div className="story__section-desc">
+              <Link className="Link__Article" to={{ pathname: `/One-Small-Thing-FE/Article/${story.title}`, state: story.url }}>
+                <div className="story__section__title-box">
+                  <div className="story__section__title-box--by">
+                    <p className="date">{story.date}</p>
+                    <p className="author-name"> {story.author}</p>
+                  </div>
+                  <h2 className="title">{story.title}</h2>
                 </div>
-                <h2 className="title">{story.title}</h2>
-              </div>
-            </Link>
+              </Link>
+            </div>
             <div className="story__section__tag-box">
               <a className="btn-ta" href="#open-modal">TAKE ACTION</a>
             </div>
