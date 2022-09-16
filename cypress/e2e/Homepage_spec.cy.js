@@ -55,14 +55,15 @@ describe("Homepage", () => {
   });
 
   it("Should allow the user to see 9 tiles of topics", () => {
-    cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').should("be.visible");
-    cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
+    cy.get(
+      '[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box'
+    ).should("be.visible");
+    cy.get(
+      '[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box'
+    ).contains("LGBTQ+");
   });
 
   it("Should allow the user to click on an option and be redirected to a page corresponding to the option clicked", () => {
-    cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').should("be.visible");
-    cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').contains("LGBTQ+");
-    cy.get('[href="/One-Small-Thing-FE/NewsStories/LGBTQ+"] > .topics__box').click();
-    cy.url().should("eq", "http://localhost:3000/One-Small-Thing-FE/NewsStories/LGBTQ+");
+    cy.selectTopic();
   });
 });

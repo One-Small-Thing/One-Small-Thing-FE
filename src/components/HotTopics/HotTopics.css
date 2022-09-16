@@ -1,5 +1,5 @@
 .hot-topics {
-  height: 85vh;
+  height: 85%;
   background-color: transparent;
   padding-top: 1rem;
   display: flex;
@@ -18,4 +18,10 @@
   grid-template-columns: 10rem 10rem 10rem;
   grid-gap: 1rem;
   justify-content: center;
+}
+
+@media (min-width: 380px) {
+  .hot-topics {
+    height: 85vh;
+  }
 }/*# sourceMappingURL=HotTopics.css.map */

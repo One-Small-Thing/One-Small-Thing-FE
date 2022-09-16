@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
 }
-
 .navbar__main {
   display: flex;
   justify-content: center;
@@ -13,16 +12,13 @@
   width: 70%;
   border-bottom: 1px solid #142028;
 }
-
 .navbar__main--display {
   text-decoration: none;
   color: #142028;
 }
-
 .navbar__main--menu--checkbox {
   display: none;
 }
-
 .navbar__main--menu--button {
   background-color: transparent;
   height: 4.5rem;
@@ -35,7 +31,6 @@
   text-align: center;
   cursor: pointer;
 }
-
 .navbar__main--menu--background {
   height: 4rem;
   width: 4rem;
@@ -45,9 +40,8 @@
   right: 2rem;
   background-color: transparent;
   z-index: 1000;
-  transition: transform .8s;
+  transition: transform 0.8s;
 }
-
 .navbar__main--menu--nav {
   height: 100vh;
   width: 100%;
@@ -57,9 +51,8 @@
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: transform .8s;
+  transition: transform 0.8s;
 }
-
 .navbar__main--menu--list {
   position: absolute;
   top: 50%;
@@ -69,15 +62,19 @@
   text-align: center;
   width: 100%;
 }
-
 .navbar__main--menu--item {
   margin: 1rem;
 }
-
+.navbar__main--menu--hotline {
+  color: rgb(104, 103, 103);
+  font-size: 2rem;
+}
+.navbar__main--menu--hotline p, .navbar__main--menu--hotline li {
+  font-size: 1.5rem;
+}
 .navbar__main--menu ul {
   list-style-type: none;
 }
-
 .navbar__main--menu--link:link, .navbar__main--menu--link:visited {
   display: inline-block;
   font-size: 2rem;
@@ -88,70 +85,57 @@
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #4B8D92 50%);
   background-size: 250%;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
 .navbar__main--menu--link:hover, .navbar__main--menu--link:active {
   background-position: 100%;
-  color: #403d3d;
+  color: rgb(64, 61, 61);
   transform: translateX(1rem);
 }
-
 .navbar__main--menu--checkbox:checked ~ .navbar__main--menu--background {
   background-image: radial-gradient(#82C7CC, #4B8D92);
   transform: scale(80);
 }
-
 .navbar__main--menu--checkbox:checked ~ .navbar__main--menu--nav {
   opacity: 1;
   width: 100%;
 }
-
 .navbar__main--menu--icon {
   position: relative;
   margin-top: 2.2rem;
 }
-
 .navbar__main--menu--icon, .navbar__main--menu--icon::before, .navbar__main--menu--icon::after {
   width: 2rem;
   height: 2px;
   background-color: #142028;
   display: inline-block;
 }
-
 .navbar__main--menu--icon::before, .navbar__main--menu--icon::after {
   content: "";
   position: absolute;
   left: 0;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
 .navbar__main--menu--icon::before {
-  top: -.6rem;
+  top: -0.6rem;
 }
-
 .navbar__main--menu--icon::after {
-  top: .6rem;
+  top: 0.6rem;
 }
-
 .navbar__main--menu--button:hover .navbar__main--menu--icon::before {
-  top: -.8rem;
+  top: -0.8rem;
 }
-
 .navbar__main--menu--button:hover .navbar__main--menu--icon::after {
-  top: .8rem;
+  top: 0.8rem;
 }
-
 .navbar__main--menu--checkbox:checked + .navbar__main--menu--button .navbar__main--menu--icon {
   background-color: transparent;
 }
-
 .navbar__main--menu--checkbox:checked + .navbar__main--menu--button .navbar__main--menu--icon::before {
   top: 0;
   transform: rotate(135deg);
 }
-
 .navbar__main--menu--checkbox:checked + .navbar__main--menu--button .navbar__main--menu--icon::after {
   top: 0;
   transform: rotate(-135deg);
-}
+}/*# sourceMappingURL=NavBar.css.map */
