@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/One-Small-Thing-FE/static/css/main.be8041fa.css",
-    "main.js": "/One-Small-Thing-FE/static/js/main.fbda6d71.js",
+    "main.js": "/One-Small-Thing-FE/static/js/main.9097b77a.js",
     "static/media/peace.jpg": "/One-Small-Thing-FE/static/media/peace.911d0f00feccfc41a892.jpg",
     "index.html": "/One-Small-Thing-FE/index.html",
     "main.be8041fa.css.map": "/One-Small-Thing-FE/static/css/main.be8041fa.css.map",
-    "main.fbda6d71.js.map": "/One-Small-Thing-FE/static/js/main.fbda6d71.js.map"
+    "main.9097b77a.js.map": "/One-Small-Thing-FE/static/js/main.9097b77a.js.map"
   },
   "entrypoints": [
     "static/css/main.be8041fa.css",
-    "static/js/main.fbda6d71.js"
+    "static/js/main.9097b77a.js"
   ]
 }
